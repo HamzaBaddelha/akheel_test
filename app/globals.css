@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth font-sans;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+  .theme {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+  }
+  :root {
+    --background: #e1e0d4;
+    --foreground: #2c1622;
+    --card: #e7e5da;
+    --card-foreground: #2c1622;
+    --popover: #e7e5da;
+    --popover-foreground: #2c1622;
+    --primary: #2c1622;
+    --primary-foreground: #e1e0d4;
+    --secondary: #709599;
+    --secondary-foreground: #1f2e31;
+    --muted: #d5d2c5;
+    --muted-foreground: #696a64;
+    --accent: #b0b8c9;
+    --accent-foreground: #2f3540;
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: #b5b9bf;
+    --input: #c0c4cb;
+    --ring: #709599;
+    --chart-1: #2c1622;
+    --chart-2: #709599;
+    --chart-3: #b0b8c9;
+    --chart-4: #d5d2c5;
+    --chart-5: #696a64;
+    --radius: 0.625rem;
+    --sidebar: #e7e5da;
+    --sidebar-foreground: #2c1622;
+    --sidebar-primary: #2c1622;
+    --sidebar-primary-foreground: #e1e0d4;
+    --sidebar-accent: #b0b8c9;
+    --sidebar-accent-foreground: #2f3540;
+    --sidebar-border: #b5b9bf;
+    --sidebar-ring: #709599;
+  }
+  .dark {
+    --background: #1d1018;
+    --foreground: #e1e0d4;
+    --card: #2c1622;
+    --card-foreground: #e1e0d4;
+    --popover: #2c1622;
+    --popover-foreground: #e1e0d4;
+    --primary: #e1e0d4;
+    --primary-foreground: #2c1622;
+    --secondary: #709599;
+    --secondary-foreground: #e1e0d4;
+    --muted: #3f2a35;
+    --muted-foreground: #c1beb2;
+    --accent: #b0b8c9;
+    --accent-foreground: #1d1018;
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: #66515d;
+    --input: #705d68;
+    --ring: #b0b8c9;
+    --chart-1: #e1e0d4;
+    --chart-2: #b0b8c9;
+    --chart-3: #709599;
+    --chart-4: #696a64;
+    --chart-5: #3f2a35;
+    --sidebar: #2c1622;
+    --sidebar-foreground: #e1e0d4;
+    --sidebar-primary: #e1e0d4;
+    --sidebar-primary-foreground: #2c1622;
+    --sidebar-accent: #b0b8c9;
+    --sidebar-accent-foreground: #1d1018;
+    --sidebar-border: #66515d;
+    --sidebar-ring: #b0b8c9;
+  }
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .gold-underline {
+    @apply relative inline-block;
+  }
+
+  .gold-underline::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-full h-[3px] bg-secondary rounded-full;
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee var(--duration) linear infinite;
+  }
+
+  .animate-marquee-vertical {
+    animation: marquee-vertical var(--duration) linear infinite;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}

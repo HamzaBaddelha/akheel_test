@@ -1,0 +1,406 @@
+{
+  "header": {
+    "nav": {
+      "blog": "Blog",
+      "programs": "Programmes",
+      "planTrip": "Planifiez votre Voyage",
+      "reservation": "Decouvrir",
+      "faq": "Faq"
+    },
+    "bookNow": "Reserver",
+    "aria": {
+      "mainNavigation": "Navigation principale",
+      "homeLink": "Accueil Akheel Travel",
+      "toggleMenu": "Basculer le menu"
+    }
+  },
+  "programs": {
+    "heroTitle": "Voyages Signature Conçus pour une Expérience de Voyage Haut de Gamme"
+  },
+  "hero": {
+    "aria": "Hero",
+    "imageAlt": "Dunes dorees du desert saoudien au coucher du soleil",
+    "logoAlt": "Akheel Travel",
+    "quote": "Un voyage de mille lieues commence toujours par un premier pas.",
+    "title": "Decouvrez une nouvelle aventure",
+    "subtitle": "Des itineraires d'exception a travers deserts ancestraux, medinas vibrantes et rivages confidentiels.",
+    "searchPlaceholder": "Ou souhaitez-vous partir ?",
+    "searchAria": "Recherche de destination",
+    "exploreButton": "Explorer",
+    "scroll": "Defiler"
+  },
+  "destinations": {
+    "aria": "Destinations",
+    "title": "Ou aller ?",
+    "subtitle": "Des ruines desertiques antiques aux villages de montagne peints de bleu, choisissez votre prochain chapitre.",
+    "prevAria": "Destination precedente",
+    "nextAria": "Destination suivante",
+    "explore": "Explorer"
+  },
+  "discoverMore": {
+    "aria": "Decouvrir Plus",
+    "tag": "Decouvrir Plus",
+    "title": "Laissez le Maroc Vous Surprendre",
+    "subtitle": "Des medinas intemporelles aux sommets enneiges de l'Atlas, vivez des experiences soigneusement imaginees pour des souvenirs inoubliables.",
+    "blueImageAlt": "Ruelles bleues du Maroc",
+    "blueCardText": "Decouvrez le charme bleu du Maroc, une parenthese paisible enveloppee de nuances indigo iconiques. Ideal pour les amoureux de culture et les escapades de reve.",
+    "cta": "Creer mon plan"
+  },
+  "testimonials": {
+    "aria": "Temoignages",
+    "cardsAria": "Cartes de temoignages",
+    "title": "Ce Que Disent Nos Voyageurs",
+    "subtitle": "Des histoires vraies de voyageurs qui nous ont confie leurs moments les plus precieux.",
+    "starsAria": "{count} sur 5 etoiles"
+  },
+  "newsletter": {
+    "aria": "Inscription a la newsletter",
+    "title": "Commencez Votre Voyage",
+    "subtitle": "Inscrivez-vous pour recevoir itineraires exclusifs, offres en avant-premiere et inspirations voyage directement dans votre boite mail.",
+    "formAria": "Formulaire newsletter",
+    "emailPlaceholder": "Votre adresse e-mail",
+    "emailAria": "Adresse e-mail",
+    "button": "S'abonner",
+    "note": "Aucun spam. Desinscription a tout moment."
+  },
+  "panels": {
+    "aria": "Destinations premium",
+    "title": "Découvrez le Maroc comme jamais auparavant",
+    "subtitle": "Cliquez pour decouvrir l'histoire unique de chaque destination, sa culture vibrante et les experiences exclusives imaginees pour vos reves de voyage.",
+    "groupAriaLabel": "Panneaux de destination interactifs",
+    "selectAriaLabel": "Selectionnez cette destination"
+  },
+  "footer": {
+    "logoAlt": "Akheel Travel",
+    "motto": "Un voyage de mille lieues commence toujours par un premier pas.",
+    "columns": {
+      "explore": "Explorer",
+      "company": "Entreprise",
+      "support": "Support"
+    },
+    "links": {
+      "saudiArabia": "Arabie Saoudite",
+      "morocco": "Maroc",
+      "allDestinations": "Toutes les Destinations",
+      "aboutUs": "A Propos",
+      "careers": "Carrieres",
+      "press": "Presse",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "terms": "Conditions d'Utilisation",
+      "privacy": "Politique de Confidentialite"
+    },
+    "copyright": "Akheel Travel. Tous droits reserves.",
+    "social": {
+      "instagram": "Instagram",
+      "x": "X (Twitter)",
+      "youtube": "YouTube"
+    }
+  },
+  "data": {
+    "destinations": {
+      "tunis": {
+        "name": "Tunis",
+        "description": "Des côtes ensoleillées, des médinas anciennes et un charme désertique intemporel dans un voyage inoubliable"
+      },
+      "moroccoTours": {
+        "name": "TOURS DU MAROC",
+        "description": "Flanez dans les ruelles bleues de la perle montagnarde du Maroc, ou chaque coin ressemble a une oeuvre d'art."
+      },
+      "saudiArabia": {
+        "name": "ARABIE SAOUDITE",
+        "description": "La ou la Mer Rouge rencontre une architecture historique en pierre de corail et une scene artistique contemporaine vibrante."
+      }
+    },
+    "testimonials": {
+      "t1": {
+        "quote": "Akheel a transforme notre voyage de noces en conte de fee. Du Sahara a la Mer Rouge, chaque detail etait parfait.",
+        "name": "Layla & Omar",
+        "location": "Dubai, EAU"
+      },
+      "t2": {
+        "quote": "J'ai voyage avec de nombreuses agences. Akheel est la seule qui m'a fait sentir unique.",
+        "name": "James Whitfield",
+        "location": "Londres, Royaume-Uni"
+      },
+      "t3": {
+        "quote": "L'experience d'AlUla etait sans egal. Notre guide maitrisait l'histoire nabateenne avec une precision remarquable.",
+        "name": "Fatima Al-Rashid",
+        "location": "Riyad, Arabie Saoudite"
+      },
+      "t4": {
+        "quote": "Chefchaouen a l'aube, un riad prive a Marrakech - Akheel cree des instants qui restent graves a vie.",
+        "name": "Sophie Renard",
+        "location": "Paris, France"
+      },
+      "t5": {
+        "quote": "Le voyage en yacht de luxe sur la Mer Rouge a depasse toutes nos attentes. Un service irreprochable du debut a la fin.",
+        "name": "Ahmed Nasser",
+        "location": "Djeddah, Arabie Saoudite"
+      }
+    },
+    "panels": {
+      "cta": "Decouvrez plus →",
+      "marrakech": {
+        "title": "Marrakech",
+        "subtitle": "Maroc"
+      },
+      "atlasMontain": {
+        "title": "Atlas Montain",
+        "subtitle": "Maroc"
+      },
+      "desert": {
+        "title": "Desert",
+        "subtitle": "Maroc"
+      },
+      "tanger": {
+        "title": "Tanger",
+        "subtitle": "Maroc"
+      },
+      "kabah": {
+        "title": "Kasbah",
+        "subtitle": "Maroc"
+      }
+    },
+    "agadirEvents": {
+      "paradiseValley": {
+        "title": "Vallee du Paradis & Montagnes de l'Atlas",
+        "subtitle": "Vallee du Paradis · Atlas · Immouzer",
+        "description": "Piscines naturelles et cascades, randonnees en vallees verdoyantes, paysages de montagne et air pur."
+      },
+      "jeepSafari": {
+        "title": "Aventure Safari en Jeep dans le Desert",
+        "subtitle": "Parc National de Souss Massa · Tiznit · Desert du Sahara",
+        "description": "Aventure 4x4 tout-terrain, grottes de pecheurs et plages sauvages, flamants roses et faune locale, dejeuner berbere traditionnel, petites dunes du Sahara."
+      },
+      "tafraoute": {
+        "title": "Tafraoute & Anti-Atlas",
+        "subtitle": "Tafraoute · Anti-Atlas",
+        "description": "Formations rocheuses uniques, oasis cachees, ambiance berbere authentique et apaisante."
+      },
+      "cooking": {
+        "title": "Experience Culinaire en Village Berbere",
+        "subtitle": "Montagnes de l'Atlas · Villages Berberes Traditionnels",
+        "description": "Preparation de tajine et couscous, ceremonie du the, immersion dans l'art de vivre berbere."
+      },
+      "cityTour": {
+        "title": "Visite d'Agadir (Telepherique + Crocopark)",
+        "subtitle": "Kasbah Oufella · Crocopark Agadir",
+        "description": "Vues panoramiques en telepherique, crocodiles et jardins botaniques, chevres grimpant aux arganiers."
+      },
+      "hammam": {
+        "title": "Experience Hammam & Spa",
+        "subtitle": "Centres Spa d'Agadir",
+        "description": "Hammam traditionnel, exfoliation au savon noir, massage relaxant aux huiles."
+      },
+      "taroudant": {
+        "title": "Excursion Taroudant & Tiout",
+        "subtitle": "Taroudant · Tiout",
+        "description": "Remparts anciens et souks, oasis et kasbah, campagne marocaine authentique."
+      },
+      "surf": {
+        "title": "Experience Surf",
+        "subtitle": "Plage d'Agadir",
+        "description": "Cours pour tous les niveaux, vagues atlantiques, esprit surf marocain."
+      },
+      "quad": {
+        "title": "Aventure Quad au Coucher du Soleil",
+        "subtitle": "Taghazout",
+        "description": "Balade en quad entre plage et montagnes, panorama de coucher du soleil, pause the en pleine nature."
+      },
+      "essaouira": {
+        "title": "Excursion a Essaouira",
+        "subtitle": "Essaouira · Medina d'Essaouira",
+        "description": "Medina historique (patrimoine mondial UNESCO), vues sur l'Atlantique, port et marches d'artisans."
+      }
+    }
+  },
+  "planTrip": {
+    "hero": {
+      "imageAlt": "Inspiration voyage premium",
+      "tag": "Experience Sur Mesure",
+      "title": "Planifiez Votre Voyage a Votre Facon",
+      "subtitle": "Votre voyage est entierement concu selon votre style, votre budget et votre rythme.",
+      "arabicLine": "خلّي رحلتك تتصمم على مزاجك بالكامل",
+      "ctaPrimary": "Commencer la Planification",
+      "ctaSecondary": "Planifier Mon Voyage"
+    },
+    "benefits": {
+      "title": "Pourquoi Ce Service",
+      "items": [
+        "Des itineraires sur mesure adaptes a votre budget, votre style de voyage et vos priorites.",
+        "Des hotels et experiences soigneusement selectionnes pour un voyage qui vous ressemble.",
+        "Un accompagnement dedie avant le depart et tout au long de votre sejour.",
+        "Une expertise premium pour des destinations d'exception comme le Maroc, la Georgie et l'Azerbaidjan."
+      ]
+    },
+    "steps": {
+      "title": "Comment Ca Marche",
+      "stepBadge": "Etape {number}",
+      "items": [
+        {
+          "title": "Renseignez les details de votre voyage",
+          "description": "Partagez vos dates, votre budget et vos preferences en quelques minutes."
+        },
+        {
+          "title": "Notre equipe vous contacte sous 24 heures",
+          "description": "Un conseiller voyage analyse votre demande et vous recontacte rapidement avec une proposition claire."
+        },
+        {
+          "title": "Apres validation, nous planifions et reservons",
+          "description": "Nous finalisons votre itineraire et prenons en charge les reservations pour une experience fluide."
+        }
+      ]
+    },
+    "form": {
+      "title": "Concevez Votre Voyage Sur Mesure",
+      "subtitle": "Remplissez le formulaire ci-dessous et un specialiste Akheel vous contactera sous 24 heures.",
+      "groups": {
+        "contact": "Informations de Contact",
+        "details": "Details du Voyage",
+        "budget": "Budget",
+        "tripType": "Type de Voyage",
+        "hotelLevel": "Categorie d'Hotel",
+        "services": "Services Souhaites",
+        "notes": "Notes Complementaires"
+      },
+      "fields": {
+        "fullName": "Nom Complet",
+        "mobile": "Numero de Telephone",
+        "email": "Email",
+        "destination": "Destination",
+        "travelDate": "Date de Depart",
+        "tripDuration": "Duree du Voyage (jours)",
+        "travelers": "Nombre de Voyageurs",
+        "adults": "Adultes",
+        "children": "Enfants",
+        "budgetRange": "Fourchette de Budget",
+        "additionalNotes": "Partagez vos activites preferees, envies ou demandes speciales"
+      },
+      "placeholders": {
+        "additionalNotes": "Dites-nous ce qui rendrait ce voyage parfait pour vous."
+      },
+      "options": {
+        "selectBudget": "Selectionnez votre budget",
+        "destinations": [
+          "Pas encore decide",
+          "Maroc",
+          "Tunis",
+          "Georgie",
+          "Azerbaidjan",
+          "Bosnie",
+          "Arabie Saoudite",
+          "Turquie",
+          "Maldives"
+        ],
+        "budget": [
+          "Moins de 5 000 SAR",
+          "5 000 - 10 000 SAR",
+          "10 000 - 20 000 SAR",
+          "Budget ouvert"
+        ],
+        "tripTypes": [
+          "Famille",
+          "Lune de miel",
+          "Aventure",
+          "Detente",
+          "Shopping"
+        ],
+        "hotelLevels": [
+          "3 Etoiles",
+          "4 Etoiles",
+          "5 Etoiles",
+          "Luxe"
+        ],
+        "services": [
+          "Vols",
+          "Hotel",
+          "Transports",
+          "Excursions",
+          "Guide Touristique"
+        ]
+      },
+      "validation": {
+        "fullName": "Veuillez saisir votre nom complet.",
+        "mobile": "Veuillez saisir un numero de telephone valide.",
+        "email": "Veuillez saisir une adresse email valide.",
+        "travelDate": "Veuillez selectionner votre date de depart.",
+        "tripDuration": "La duree du voyage doit etre d'au moins 1 jour.",
+        "travelers": "Le nombre de voyageurs doit etre d'au moins 1.",
+        "adults": "Au moins 1 adulte est requis.",
+        "children": "Le nombre d'enfants ne peut pas etre negatif.",
+        "travelersBreakdown": "Le total adultes + enfants ne peut pas depasser le nombre total de voyageurs.",
+        "budgetRange": "Veuillez choisir une fourchette de budget.",
+        "hotelLevel": "Veuillez choisir votre categorie d'hotel preferee."
+      },
+      "cta": {
+        "submit": "Lancer Mon Voyage Sur Mesure",
+        "submitting": "Envoi en cours...",
+        "whatsApp": "Discuter sur WhatsApp"
+      },
+      "success": {
+        "title": "Demande recue avec succes",
+        "subtitle": "L'equipe Akheel vous contactera sous 24 heures.",
+        "reset": "Envoyer une autre demande"
+      }
+    },
+    "destinations": {
+      "title": "Inspirations Destinations Premium",
+      "subtitle": "Explorez des idees soigneusement selectionnees pour le Maroc, la Georgie, la Bosnie et bien plus.",
+      "items": [
+        {
+          "name": "Maroc",
+          "note": "Medinas vibrantes, riads de prestige et moments prives dans le desert."
+        },
+        {
+          "name": "Georgie",
+          "note": "Montagnes majestueuses, adresses boutique et escapades urbaines elegantes."
+        },
+        {
+          "name": "Bosnie",
+          "note": "Itineraires nature et experiences authentiques dans une ambiance raffinee et apaisante."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Ce Que Disent Les Voyageurs",
+      "items": [
+        {
+          "name": "Rania & Omar",
+          "quote": "Akheel a construit chaque journee autour de nos envies. Le voyage etait fluide, personnel et veritablement premium."
+        },
+        {
+          "name": "Fahad Al-Mutairi",
+          "quote": "J'ai partage mon budget et mes preferences une seule fois, puis tout a ete gere avec un grand professionnalisme."
+        },
+        {
+          "name": "Noor A.",
+          "quote": "Le meilleur, c'etait l'accompagnement avant et pendant le voyage. Ce n'etait pas un forfait standard, mais notre style a 100%."
+        }
+      ]
+    },
+    "finalCta": {
+      "line": "Votre voyage n'est pas un forfait. C'est une experience sur mesure concue autour de vous."
+    },
+    "whatsApp": {
+      "aria": "Discuter sur WhatsApp",
+      "iconAlt": "WhatsApp"
+    }
+  },
+  "agadir": {
+    "heroAria": "Hero Agadir",
+    "heroImageAlt": "Littoral d'Agadir au coucher du soleil",
+    "heroBadge": "Tours du Maroc",
+    "heroTitle": "Agadir",
+    "heroSubtitle": "La ou le Sahara rencontre l'Atlantique - plages dorees, souks vibrants et porte d'entree vers les joyaux caches du sud marocain.",
+    "timelineAria": "Points forts d'Agadir",
+    "timelineTitle": "Explorer Agadir",
+    "timelineSubtitle": "Cotes ensoleillees, kasbahs historiques et aventures du surf au Sahara.",
+    "ctaAria": "Appel a l'action",
+    "ctaTitle": "Pret a decouvrir Agadir ?",
+    "ctaSubtitle": "Confiez-nous la creation d'un itineraire sur-mesure, pense pour votre style de voyage.",
+    "ctaButton": "Nous Contacter",
+    "tourPageAria": "Tours d'Agadir"
+  }
+}

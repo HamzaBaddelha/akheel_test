@@ -1,0 +1,406 @@
+{
+  "header": {
+    "nav": {
+      "blog": "Blog",
+      "programs": "Programs",
+      "planTrip": "Plan your Trip",
+      "reservation": "Discover",
+      "faq": "Faq"
+    },
+    "bookNow": "Book Now",
+    "aria": {
+      "mainNavigation": "Main navigation",
+      "homeLink": "Akheel Travel home",
+      "toggleMenu": "Toggle menu"
+    }
+  },
+  "programs": {
+    "heroTitle": "Signature Journeys Crafted for Elevated Travel"
+  },
+  "hero": {
+    "aria": "Hero",
+    "imageAlt": "Golden Saudi desert dunes at sunset",
+    "logoAlt": "Akheel Travel",
+    "quote": "A journey of a thousand miles begins with a single step.",
+    "title": "Discover a new adventure",
+    "subtitle": "Curated journeys through ancient deserts, vibrant medinas, and hidden coastlines.",
+    "searchPlaceholder": "Where do you want to go?",
+    "searchAria": "Destination search",
+    "exploreButton": "Explore",
+    "scroll": "Scroll"
+  },
+  "destinations": {
+    "aria": "Destinations",
+    "title": "Where to?",
+    "subtitle": "From ancient desert ruins to blue-washed mountain villages — choose your next chapter.",
+    "prevAria": "Previous destination",
+    "nextAria": "Next destination",
+    "explore": "Explore"
+  },
+  "discoverMore": {
+    "aria": "Discover More",
+    "tag": "Discover More",
+    "title": "Let Morocco Surprise You",
+    "subtitle": "From timeless medinas to snow-capped Atlas peaks, unlock curated experiences crafted for unforgettable memories.",
+    "blueImageAlt": "Blue streets of Morocco",
+    "blueCardText": "Discover Morocco's blue charm a serene escape wrapped in signature indigo hues. Perfect for culture lovers and dreamy getaways",
+    "cta": "Make a plan"
+  },
+  "testimonials": {
+    "aria": "Testimonials",
+    "cardsAria": "Testimonial cards",
+    "title": "What Travelers Say",
+    "subtitle": "Real stories from guests who trusted us with their most meaningful journeys.",
+    "starsAria": "{count} out of 5 stars"
+  },
+  "newsletter": {
+    "aria": "Newsletter sign-up",
+    "title": "Start Your Journey",
+    "subtitle": "Subscribe for exclusive itineraries, early-bird deals, and travel inspiration delivered to your inbox.",
+    "formAria": "Newsletter subscription",
+    "emailPlaceholder": "Your email address",
+    "emailAria": "Email address",
+    "button": "Subscribe",
+    "note": "No spam, ever. Unsubscribe anytime."
+  },
+  "panels": {
+    "aria": "Premium destinations",
+    "title": "Experience Morocco Like Never Before",
+    "subtitle": "Click to discover each destination's unique story, vibrant culture, and exclusive experiences tailored to your travel dreams.",
+    "groupAriaLabel": "Interactive destination panels",
+    "selectAriaLabel": "Select this destination"
+  },
+  "footer": {
+    "logoAlt": "Akheel Travel",
+    "motto": "A journey of a thousand miles begins with a single step.",
+    "columns": {
+      "explore": "Explore",
+      "company": "Company",
+      "support": "Support"
+    },
+    "links": {
+      "saudiArabia": "Saudi Arabia",
+      "morocco": "Morocco",
+      "allDestinations": "All Destinations",
+      "aboutUs": "About Us",
+      "careers": "Careers",
+      "press": "Press",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "Akheel Travel. All rights reserved.",
+    "social": {
+      "instagram": "Instagram",
+      "x": "X (Twitter)",
+      "youtube": "YouTube"
+    }
+  },
+  "data": {
+    "destinations": {
+      "tunis": {
+        "name": "Tunis",
+        "description": "Sun-drenched coasts, ancient medinas, and timeless desert charm in one unforgettable journey."
+      },
+      "moroccoTours": {
+        "name": "MOROCCO TOURS",
+        "description": "Wander the blue-washed alleyways of Morocco's mountain jewel, where every corner reveals a painter's dream."
+      },
+      "saudiArabia": {
+        "name": "SAUDI ARABIA",
+        "description": "Where the Red Sea meets historic coral-stone architecture and a thriving contemporary art scene."
+      }
+    },
+    "testimonials": {
+      "t1": {
+        "quote": "Akheel turned our honeymoon into a fairytale. From the Sahara to the Red Sea, every detail was flawless.",
+        "name": "Layla & Omar",
+        "location": "Dubai, UAE"
+      },
+      "t2": {
+        "quote": "I've traveled with dozens of agencies. Akheel is the only one that made me feel like I was the only client.",
+        "name": "James Whitfield",
+        "location": "London, UK"
+      },
+      "t3": {
+        "quote": "The AlUla experience was unlike anything I've seen. Our guide's knowledge of Nabataean history was extraordinary.",
+        "name": "Fatima Al-Rashid",
+        "location": "Riyadh, KSA"
+      },
+      "t4": {
+        "quote": "Chefchaouen at sunrise, a private riad in Marrakech — Akheel crafts moments that stay with you forever.",
+        "name": "Sophie Renard",
+        "location": "Paris, France"
+      },
+      "t5": {
+        "quote": "Their luxury Red Sea yacht trip exceeded every expectation. World-class service from start to finish.",
+        "name": "Ahmed Nasser",
+        "location": "Jeddah, KSA"
+      }
+    },
+    "panels": {
+      "cta": "Discover more →",
+      "marrakech": {
+        "title": "Marrakech",
+        "subtitle": "Morocco"
+      },
+      "atlasMontain": {
+        "title": "Atlas Montain",
+        "subtitle": "Morocco"
+      },
+      "desert": {
+        "title": "Desert",
+        "subtitle": "Morocco"
+      },
+      "tanger": {
+        "title": "Tanger",
+        "subtitle": "Morocco"
+      },
+      "kabah": {
+        "title": "Kasbah",
+        "subtitle": "Morocco"
+      }
+    },
+    "agadirEvents": {
+      "paradiseValley": {
+        "title": "Paradise Valley & Atlas Mountains",
+        "subtitle": "Paradise Valley · Atlas Mountains · Immouzer",
+        "description": "Natural pools & waterfalls, hiking in green valleys, mountain landscapes & fresh air."
+      },
+      "jeepSafari": {
+        "title": "Jeep Safari Desert Adventure",
+        "subtitle": "Souss Massa National Park · Tiznit · Sahara Desert",
+        "description": "4x4 off-road adventure, fishermen caves & wild beaches, flamingos & wildlife, traditional Berber lunch, small Sahara dunes."
+      },
+      "tafraoute": {
+        "title": "Tafraoute & Anti-Atlas Mountains",
+        "subtitle": "Tafraoute · Anti-Atlas Mountains",
+        "description": "Unique rock formations, hidden oasis landscapes, calm & authentic Berber environment."
+      },
+      "cooking": {
+        "title": "Berber Village Cooking Experience",
+        "subtitle": "Atlas Mountains · Traditional Berber Villages",
+        "description": "Cooking tagine & couscous, tea ceremony, discover Berber lifestyle."
+      },
+      "cityTour": {
+        "title": "Agadir City Tour (Cable Car + Crocopark)",
+        "subtitle": "Kasbah Oufella · Crocopark Agadir",
+        "description": "Cable car panoramic views, crocodiles & botanical gardens, goats climbing argan trees."
+      },
+      "hammam": {
+        "title": "Hammam & Spa Experience",
+        "subtitle": "Agadir Spa Centers",
+        "description": "Traditional hammam, black soap exfoliation, relaxing oil massage."
+      },
+      "taroudant": {
+        "title": "Taroudant & Tiout Day Trip",
+        "subtitle": "Taroudant · Tiout",
+        "description": "Ancient city walls & souks, oasis & kasbah, authentic Moroccan countryside."
+      },
+      "surf": {
+        "title": "Surf Experience",
+        "subtitle": "Agadir Beach",
+        "description": "Surf lessons for all levels, Atlantic waves, Moroccan surf culture."
+      },
+      "quad": {
+        "title": "Quad Sunset Adventure",
+        "subtitle": "Taghazout",
+        "description": "Quad biking on beach & mountains, sunset views, tea break in nature."
+      },
+      "essaouira": {
+        "title": "Essaouira Day Trip",
+        "subtitle": "Essaouira · Essaouira Medina",
+        "description": "Historic medina (UNESCO World Heritage Site), Atlantic ocean views, port & artisan markets."
+      }
+    }
+  },
+  "planTrip": {
+    "hero": {
+      "imageAlt": "Luxury travel inspiration",
+      "tag": "Custom Experience",
+      "title": "Plan Your Trip Your Way",
+      "subtitle": "Your journey is custom-designed around your style, budget, and pace.",
+      "arabicLine": "خلّي رحلتك تتصمم على مزاجك بالكامل",
+      "ctaPrimary": "Start Planning",
+      "ctaSecondary": "Plan Your Journey"
+    },
+    "benefits": {
+      "title": "Why This Service",
+      "items": [
+        "Tailor-made itineraries aligned with your budget, travel style, and goals.",
+        "Handpicked hotels, experiences, and pacing fully personalized for you.",
+        "Dedicated support before departure and throughout every step of your trip.",
+        "Premium planning expertise for standout destinations like Morocco, Georgia, and Azerbaijan."
+      ]
+    },
+    "steps": {
+      "title": "How It Works",
+      "stepBadge": "Step {number}",
+      "items": [
+        {
+          "title": "Fill in your travel details",
+          "description": "Share your dates, budget, and preferences in just a few minutes."
+        },
+        {
+          "title": "Our team contacts you within 24 hours",
+          "description": "A travel specialist reviews your request and reaches out quickly with clear next steps."
+        },
+        {
+          "title": "Once approved, we begin planning and booking",
+          "description": "We craft your itinerary and take care of the bookings so you can focus on the experience."
+        }
+      ]
+    },
+    "form": {
+      "title": "Design Your Custom Journey",
+      "subtitle": "Complete the form below and an Akheel travel specialist will contact you within 24 hours.",
+      "groups": {
+        "contact": "Contact Information",
+        "details": "Trip Details",
+        "budget": "Budget",
+        "tripType": "Trip Type",
+        "hotelLevel": "Hotel Level",
+        "services": "Required Services",
+        "notes": "Additional Notes"
+      },
+      "fields": {
+        "fullName": "Full Name",
+        "mobile": "Mobile Number",
+        "email": "Email",
+        "destination": "Destination",
+        "travelDate": "Travel Date",
+        "tripDuration": "Trip Duration (days)",
+        "travelers": "Number of Travelers",
+        "adults": "Adults",
+        "children": "Children",
+        "budgetRange": "Budget Range",
+        "additionalNotes": "Share activities, preferences, or special requests"
+      },
+      "placeholders": {
+        "additionalNotes": "Tell us what would make this trip perfect for you."
+      },
+      "options": {
+        "selectBudget": "Select your budget",
+        "destinations": [
+          "Not sure yet",
+          "Morocco",
+          "Tunis",
+          "Georgia",
+          "Azerbaijan",
+          "Bosnia",
+          "Saudi Arabia",
+          "Turkey",
+          "Maldives"
+        ],
+        "budget": [
+          "Less than 5,000 SAR",
+          "5,000 - 10,000 SAR",
+          "10,000 - 20,000 SAR",
+          "Open Budget"
+        ],
+        "tripTypes": [
+          "Family",
+          "Honeymoon",
+          "Adventure",
+          "Relaxation",
+          "Shopping"
+        ],
+        "hotelLevels": [
+          "3 Stars",
+          "4 Stars",
+          "5 Stars",
+          "Luxury"
+        ],
+        "services": [
+          "Flights",
+          "Hotel",
+          "Transportation",
+          "Tours",
+          "Tour Guide"
+        ]
+      },
+      "validation": {
+        "fullName": "Please enter your full name.",
+        "mobile": "Please enter a valid mobile number.",
+        "email": "Please enter a valid email address.",
+        "travelDate": "Please select your travel date.",
+        "tripDuration": "Trip duration must be at least 1 day.",
+        "travelers": "Number of travelers must be at least 1.",
+        "adults": "At least 1 adult is required.",
+        "children": "Children count cannot be negative.",
+        "travelersBreakdown": "Adults and children cannot exceed total travelers.",
+        "budgetRange": "Please select a budget range.",
+        "hotelLevel": "Please choose your preferred hotel level."
+      },
+      "cta": {
+        "submit": "Begin Your Custom Journey",
+        "submitting": "Submitting...",
+        "whatsApp": "Chat on WhatsApp"
+      },
+      "success": {
+        "title": "Request received successfully",
+        "subtitle": "Akheel team will contact you within 24 hours.",
+        "reset": "Submit another request"
+      }
+    },
+    "destinations": {
+      "title": "Premium Destination Inspirations",
+      "subtitle": "Explore curated ideas for Morocco, Georgia, Bosnia, and beyond.",
+      "items": [
+        {
+          "name": "Morocco",
+          "note": "Culture-rich medinas, luxury riads, and unforgettable private desert moments."
+        },
+        {
+          "name": "Georgia",
+          "note": "Scenic mountains, boutique stays, and elegant city escapes crafted around your taste."
+        },
+        {
+          "name": "Bosnia",
+          "note": "Nature-filled routes with refined, calm, and authentic experiences."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Travelers Say",
+      "items": [
+        {
+          "name": "Rania & Omar",
+          "quote": "Akheel built every day around what we love. The journey felt personal, seamless, and truly premium."
+        },
+        {
+          "name": "Fahad Al-Mutairi",
+          "quote": "I shared my budget and preferences once, and they handled everything professionally. The quality exceeded expectations."
+        },
+        {
+          "name": "Noor A.",
+          "quote": "The best part was feeling supported before and during travel. It was not a package, it was exactly our style."
+        }
+      ]
+    },
+    "finalCta": {
+      "line": "Your journey is not a package. It is a custom experience designed around you."
+    },
+    "whatsApp": {
+      "aria": "Chat on WhatsApp",
+      "iconAlt": "WhatsApp"
+    }
+  },
+  "agadir": {
+    "heroAria": "Agadir hero",
+    "heroImageAlt": "Agadir coastline at sunset",
+    "heroBadge": "Morocco Tours",
+    "heroTitle": "Agadir",
+    "heroSubtitle": "Where the Sahara meets the Atlantic — golden beaches, vibrant souks, and the gateway to southern Morocco's hidden treasures.",
+    "timelineAria": "Agadir highlights",
+    "timelineTitle": "Explore Agadir",
+    "timelineSubtitle": "Sun-drenched coastlines, ancient kasbahs, and adventures from surf to Sahara.",
+    "ctaAria": "Call to action",
+    "ctaTitle": "Ready to discover Agadir?",
+    "ctaSubtitle": "Let us craft a bespoke itinerary tailored to your travel style.",
+    "ctaButton": "Get in Touch",
+    "tourPageAria": "Agadir tours"
+  }
+}
