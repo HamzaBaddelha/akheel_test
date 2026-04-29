@@ -23,6 +23,8 @@ const DICTIONARIES: Record<Language, Dictionary> = {
 
 interface I18nContextValue {
   language: Language;
+  direction: "ltr" | "rtl";
+  isRTL: boolean;
   setLanguage: (language: Language) => void;
   t: (key: string, params?: Record<string, string | number>) => string;
 }
@@ -50,7 +52,10 @@ function interpolate(template: string, params?: Record<string, string | number>)
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en");
-  const [dictionary, setDictionary] = useState<Dictionary>(english);
+
+  const direction: "ltr" | "rtl" = language === "ar" ? "rtl" : "ltr";
+  const isRTL = direction === "rtl";
+  const dictionary = DICTIONARIES[language];
 
   useEffect(() => {
     const saved = window.localStorage.getItem("akheel-lang");
@@ -62,20 +67,20 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     window.localStorage.setItem("akheel-lang", language);
     document.documentElement.lang = language;
-    document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
-  }, [language]);
-
-  useEffect(() => {
-    setDictionary(DICTIONARIES[language]);
-  }, [language]);
+    document.documentElement.dir = direction;
+    document.body.dataset.lang = language;
+    document.body.dataset.dir = direction;
+  }, [language, direction]);
 
   const value = useMemo<I18nContextValue>(() => {
     return {
       language,
+      direction,
+      isRTL,
       setLanguage,
       t: (key, params) => interpolate(getValue(dictionary, key), params),
     };
-  }, [language, dictionary]);
+  }, [language, direction, isRTL, dictionary]);
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }

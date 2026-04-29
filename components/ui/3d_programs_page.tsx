@@ -24,6 +24,11 @@ interface ThreeDCarouselProps {
   title?: string;
   subtitle?: string;
   tagline?: string;
+  isRTL?: boolean;
+  learnMoreLabel?: string;
+  previousLabel?: string;
+  nextLabel?: string;
+  goToItemLabel?: string;
 }
 
 const ThreeDCarousel = ({
@@ -34,6 +39,11 @@ const ThreeDCarousel = ({
   title = "From Textile to Intelligence",
   subtitle = "Customer Cases",
   tagline,
+  isRTL = false,
+  learnMoreLabel = "Learn more",
+  previousLabel = "Previous",
+  nextLabel = "Next",
+  goToItemLabel = "Go to item",
 }: ThreeDCarouselProps) => {
   const [active, setActive] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -139,7 +149,7 @@ const ThreeDCarousel = ({
                       </div>
                     </div>
 
-                    <CardContent className="flex flex-grow flex-col p-6">
+                    <CardContent className={`flex flex-grow flex-col p-6 ${isRTL ? "text-right" : "text-left"}`}>
                       <h3 className="mb-1 text-xl font-bold text-foreground">{item.title}</h3>
                       <p className="mb-2 text-sm font-medium text-gray-500">{item.brand}</p>
                       <p className="flex-grow text-sm text-gray-600">{item.description}</p>
@@ -160,8 +170,12 @@ const ThreeDCarousel = ({
                           href={item.link}
                           className="group relative inline-flex items-center text-gray-500 hover:underline"
                         >
-                          <span className="relative z-10">Learn more</span>
-                          <ArrowRight className="relative z-10 ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          <span className="relative z-10">{learnMoreLabel}</span>
+                          <ArrowRight
+                            className={`relative z-10 h-4 w-4 transition-transform ${
+                              isRTL ? "mr-2 rotate-180 group-hover:-translate-x-1" : "ml-2 group-hover:translate-x-1"
+                            }`}
+                          />
                           <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gray-500 transition-all duration-300 group-hover:w-full" />
                         </Link>
                       </div>
@@ -173,18 +187,22 @@ const ThreeDCarousel = ({
           </div>
 
           <button
-            className="absolute left-4 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-gray-500 shadow-md transition-all hover:scale-110 hover:bg-white"
+            className={`absolute top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-gray-500 shadow-md transition-all hover:scale-110 hover:bg-white ${
+              isRTL ? "right-4" : "left-4"
+            }`}
             onClick={() => setActive((prev) => (prev - 1 + items.length) % items.length)}
-            aria-label="Previous"
+            aria-label={previousLabel}
           >
-            <ChevronLeft className="h-5 w-5" />
+            {isRTL ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
           </button>
           <button
-            className="absolute right-4 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-gray-500 shadow-md transition-all hover:scale-110 hover:bg-white"
+            className={`absolute top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-gray-500 shadow-md transition-all hover:scale-110 hover:bg-white ${
+              isRTL ? "left-4" : "right-4"
+            }`}
             onClick={() => setActive((prev) => (prev + 1) % items.length)}
-            aria-label="Next"
+            aria-label={nextLabel}
           >
-            <ChevronRight className="h-5 w-5" />
+            {isRTL ? <ChevronLeft className="h-5 w-5" /> : <ChevronRight className="h-5 w-5" />}
           </button>
 
           <div className="absolute bottom-6 left-0 right-0 z-30 flex items-center justify-center space-x-3">
@@ -195,7 +213,7 @@ const ThreeDCarousel = ({
                   active === idx ? "bg-gray-500 w-5" : "bg-gray-200 hover:bg-gray-300"
                 }`}
                 onClick={() => setActive(idx)}
-                aria-label={`Go to item ${idx + 1}`}
+                aria-label={`${goToItemLabel} ${idx + 1}`}
               />
             ))}
           </div>

@@ -13,7 +13,7 @@ type HeaderProps = {
 };
 
 export default function Header({ fixedBgColor }: HeaderProps = {}) {
-  const { language, setLanguage, t } = useI18n();
+  const { language, isRTL, setLanguage, t } = useI18n();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -29,6 +29,10 @@ export default function Header({ fixedBgColor }: HeaderProps = {}) {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => void (document.body.style.overflow = "");
   }, [mobileOpen]);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [language]);
 
   useEffect(() => {
     if (fixedBgColor) return;
@@ -136,14 +140,17 @@ export default function Header({ fixedBgColor }: HeaderProps = {}) {
       </Container>
 
       {mobileOpen && (
-        <div className="absolute inset-x-0 top-16 bg-primary/95 md:hidden">
-          <ul className="flex flex-col gap-1 p-5">
+        <div className="absolute inset-x-0 top-full border-t border-white/10 bg-primary/95 backdrop-blur-sm md:hidden">
+          <ul className="flex max-h-[calc(100vh-4rem)] flex-col gap-1 overflow-y-auto p-5 sm:max-h-[calc(100vh-5rem)]">
             <li className="mb-2 flex items-center justify-center gap-2">
               {LANGS.map((lang) => (
                 <button
                   key={lang}
                   type="button"
-                  onClick={() => setLanguage(lang)}
+                  onClick={() => {
+                    setLanguage(lang);
+                    setMobileOpen(false);
+                  }}
                   className={langBtn(lang, true)}
                 >
                   {lang}
@@ -156,7 +163,9 @@ export default function Header({ fixedBgColor }: HeaderProps = {}) {
                 <Link
                   href={href}
                   onClick={() => setMobileOpen(false)}
-                  className="block rounded-card px-4 py-3 text-lg text-background transition-colors hover:bg-background/10 hover:text-secondary"
+                  className={`block rounded-card px-4 py-3 text-lg text-background transition-colors hover:bg-background/10 hover:text-secondary ${
+                    isRTL ? "text-right" : "text-left"
+                  }`}
                 >
                   {label}
                 </Link>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useMemo, useState } from "react";
+import { useI18n } from "@/components/i18n/I18nProvider";
 import FeaturedProgram from "@/app/programs/_components/FeaturedProgram";
 import ProgramsEmptyState from "@/app/programs/_components/ProgramsEmptyState";
 import ProgramsFilters from "@/app/programs/_components/ProgramsFilters";
@@ -13,6 +14,7 @@ import {
   filterProgramsByCategory,
   splitProgramsForSections,
 } from "@/lib/programs/helpers";
+import { localizeProgram } from "@/lib/programs/localization";
 import type { Program } from "@/lib/programs/types";
 
 type Props = { programs: Program[] };
@@ -48,15 +50,21 @@ const carouselProgramTitles = new Set([
   "Berber Village Cooking Experience",
 ]);
 
-function MobileProgramsRail({ items }: { items: CarouselItem[] }) {
+function MobileProgramsRail({
+  items,
+  t,
+}: {
+  items: CarouselItem[];
+  t: (key: string) => string;
+}) {
   return (
-    <section aria-label="Featured programs rail" className="space-y-3 lg:hidden">
+    <section aria-label={t("programsPage.carousel.mobileAria")} className="space-y-3 lg:hidden">
       <div className="space-y-2">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#999570]">
-          Immersive Discovery
+          {t("programsPage.carousel.subtitle")}
         </p>
         <h2 className="text-xl font-semibold text-[#2c2216] sm:text-2xl">
-          Morocco Signature Journey
+          {t("programsPage.carousel.title")}
         </h2>
       </div>
       <div className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -89,7 +97,7 @@ function MobileProgramsRail({ items }: { items: CarouselItem[] }) {
                 href={item.link}
                 className="inline-flex text-sm font-semibold text-[#2c2216] underline decoration-[#2c2216]/40 underline-offset-4"
               >
-                View Program
+                {t("programsPage.common.viewProgram")}
               </Link>
             </div>
           </article>
@@ -100,6 +108,7 @@ function MobileProgramsRail({ items }: { items: CarouselItem[] }) {
 }
 
 export default function ProgramsClient({ programs }: Props) {
+  const { isRTL, t } = useI18n();
   const [activeCategory, setActiveCategory] = useState("All");
 
   const categories = useMemo(() => buildProgramCategories(programs), [programs]);
@@ -111,22 +120,33 @@ export default function ProgramsClient({ programs }: Props) {
     () => splitProgramsForSections(filtered),
     [filtered],
   );
+  const localizedFeatured = useMemo(
+    () => (featured ? localizeProgram(featured, t) : null),
+    [featured, t],
+  );
+  const localizedGridPrograms = useMemo(
+    () => gridPrograms.map((program) => localizeProgram(program, t)),
+    [gridPrograms, t],
+  );
   const carouselItems = useMemo(
     () =>
       filtered
         .filter((program) => carouselProgramTitles.has(program.title))
-        .map((program) => ({
+        .map((program) => {
+          const localizedProgram = localizeProgram(program, t);
+          return {
           id: program.id,
-          title: program.title,
-          brand: program.category || "Program",
+          title: localizedProgram.title,
+          brand: localizedProgram.category || t("programsPage.common.program"),
           description:
-            program.shortDescription ||
-            "A premium travel program designed for memorable moments.",
-          tags: (program.highlights ?? []).slice(0, 4),
+            localizedProgram.shortDescription ||
+            t("programsPage.common.premiumFallback"),
+          tags: (localizedProgram.highlights ?? []).slice(0, 4),
           imageUrl: program.coverImage || "/assets/hero.webp",
           link: "/agadir",
-        })),
-    [filtered],
+        };
+        }),
+    [filtered, t],
   );
 
   const hasPrograms = Boolean(featured || carouselItems.length || gridPrograms.length);
@@ -140,19 +160,24 @@ export default function ProgramsClient({ programs }: Props) {
       />
       {carouselItems.length > 0 && (
         <>
-          <MobileProgramsRail items={carouselItems} />
-          <div className="relative left-1/2 hidden w-screen -translate-x-1/2 lg:block">
+          <MobileProgramsRail items={carouselItems} t={t} />
+          <div className="hidden w-full lg:block">
             <ThreeDProgramsPage
               items={carouselItems}
-              title="Morocco Signature Journey"
-              subtitle="Immersive Discovery"
+              title={t("programsPage.carousel.title")}
+              subtitle={t("programsPage.carousel.subtitle")}
+              isRTL={isRTL}
+              learnMoreLabel={t("programsPage.common.learnMore")}
+              previousLabel={t("programsPage.common.previous")}
+              nextLabel={t("programsPage.common.next")}
+              goToItemLabel={t("programsPage.common.goToItem")}
             />
           </div>
         </>
       )}
 
-      {featured && <FeaturedProgram program={featured} />}
-      {gridPrograms.length > 0 && <ProgramsGrid programs={gridPrograms} />}
+      {localizedFeatured && <FeaturedProgram program={localizedFeatured} />}
+      {localizedGridPrograms.length > 0 && <ProgramsGrid programs={localizedGridPrograms} />}
       {!hasPrograms && <ProgramsEmptyState />}
     </section>
   );

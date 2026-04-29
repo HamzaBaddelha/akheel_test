@@ -36,7 +36,7 @@ const FadeInMotion = ({ children, delay = 0, y = 30, className = "" }: { childre
 );
 
 export default function DiscoverMore() {
-  const { t } = useI18n();
+  const { isRTL, t } = useI18n();
   const sectionRef = useRef<HTMLElement>(null);
   const reduced = useReducedMotion();
 
@@ -84,9 +84,21 @@ export default function DiscoverMore() {
 
             <div className="grid gap-4 md:gap-5">
               {/* Text card */}
-              <FadeInMotion delay={0.16} y={24} className="inline-flex w-full max-w-full items-center self-start rounded-[20px] border border-accent/40 bg-background/20 p-5 backdrop-blur-xl sm:w-fit sm:p-6 lg:p-8">
+              <FadeInMotion
+                delay={0.16}
+                y={24}
+                className={`inline-flex w-full max-w-full items-center self-start rounded-[20px] border border-accent/40 bg-background/20 p-5 backdrop-blur-xl sm:w-fit sm:p-6 lg:p-8 ${
+                  isRTL ? "sm:self-end" : ""
+                }`}
+              >
                 <motion.div style={{ y: yCard }}>
-                  <BlurText text={t("discoverMore.blueCardText")} delay={60} animateBy="words" direction="bottom" className="text-left text-base leading-relaxed text-primary-foreground sm:text-lg" />
+                  <BlurText
+                    text={t("discoverMore.blueCardText")}
+                    delay={60}
+                    animateBy="words"
+                    direction="bottom"
+                    className={`${isRTL ? "text-right" : "text-left"} text-base leading-relaxed text-primary-foreground sm:text-lg`}
+                  />
                 </motion.div>
               </FadeInMotion>
 

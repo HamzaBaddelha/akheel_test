@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 import { useI18n } from "@/components/i18n/I18nProvider";
 
 export default function Hero() {
-  const { t } = useI18n();
+  const { isRTL, t } = useI18n();
 
   return (
     <section
@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-b from-transparent via-background/70 to-background" />
 
       <Container className="relative z-10">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className={`mx-auto max-w-3xl ${isRTL ? "text-center sm:text-right" : "text-center"}`}>
           <div className="mb-6 flex justify-center">
             <Image
               src="/assets/logo-white-no-background.png"
@@ -40,20 +40,25 @@ export default function Hero() {
             />
           </div>
 
-          <p className="mb-8 font-serif text-base italic text-white sm:text-lg">
+          <p className={`mb-8 font-serif text-base italic text-white sm:text-lg ${isRTL ? "sm:text-right" : ""}`}>
             {t("hero.quote")}
           </p>
 
-          <h1 className="mb-4 font-serif text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
+          <h1 className={`mb-4 font-serif font-bold leading-tight tracking-tight text-white ${
+            isRTL ? "text-[2.05rem] sm:text-5xl lg:text-7xl sm:leading-[1.25]" : "text-4xl sm:text-5xl lg:text-7xl"
+          }`}>
             {t("hero.title")}
           </h1>
 
-          <p className="mb-10 text-lg text-white/90 sm:text-xl">
+          <p className={`mb-10 text-white/90 ${isRTL ? "text-base leading-8 sm:text-xl" : "text-lg sm:text-xl"}`}>
             {t("hero.subtitle")}
           </p>
 
-          <form className="mx-auto flex max-w-lg items-center gap-2 rounded-full border border-accent/35 bg-background/15 p-2">
-            <div className="flex flex-1 items-center gap-2 pl-4">
+          <form
+            dir={isRTL ? "rtl" : "ltr"}
+            className="mx-auto flex w-full max-w-lg flex-col gap-2 rounded-[2rem] border border-accent/35 bg-background/15 p-2 sm:flex-row sm:items-center"
+          >
+            <div className={`flex flex-1 items-center gap-2 ${isRTL ? "pr-4" : "pl-4"}`}>
               <svg
                 className="h-5 w-5 shrink-0 text-primary-foreground/55"
                 fill="none"
@@ -69,10 +74,12 @@ export default function Hero() {
                 type="text"
                 placeholder={t("hero.searchPlaceholder")}
                 aria-label={t("hero.searchAria")}
-                className="w-full bg-transparent py-2 text-sm text-primary-foreground placeholder-primary-foreground/55 outline-none"
+                className={`w-full bg-transparent py-2 text-sm text-primary-foreground placeholder-primary-foreground/55 outline-none ${
+                  isRTL ? "text-right" : "text-left"
+                }`}
               />
             </div>
-            <Button variant="primary" pill size="md">
+            <Button variant="primary" pill size="md" className="w-full sm:w-auto">
               {t("hero.exploreButton")}
             </Button>
           </form>

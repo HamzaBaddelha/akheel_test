@@ -23,8 +23,8 @@ export default async function ProgramsPage() {
         className="overflow-x-clip pb-16 pt-20 text-[#2c2216] sm:pb-20 sm:pt-24"
         style={{ background: PROGRAMS_BG_COLOR }}
       >
+        <ProgramsHero />
         <Container className="space-y-12 sm:space-y-20">
-          <ProgramsHero />
           <ProgramsClient programs={programs} />
           <ProgramsValueProps valueProps={VALUE_PROPS} />
           <TunisSection />

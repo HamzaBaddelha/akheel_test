@@ -17,6 +17,464 @@
   "programs": {
     "heroTitle": "Voyages Signature Conçus pour une Expérience de Voyage Haut de Gamme"
   },
+  "programsPage": {
+    "hero": {
+      "tag": "Programmes",
+      "title": "Explorez des voyages d'exception au-dela du tourisme classique",
+      "subtitle": "Decouvrez des parcours elegants, concus avec soin entre cotes, villes, deserts et montagnes.",
+      "exploreCta": "Explorer les programmes",
+      "planCta": "Planifier votre voyage",
+      "slides": {
+        "parcPerdicarisAlt": "Littoral panoramique du parc Perdicaris a Tanger",
+        "tafraouteAlt": "Village montagneux de Tafraoute et cascade",
+        "atlasParadiseAlt": "Eaux cristallines des canyons d'Atlas Paradise"
+      }
+    },
+    "carousel": {
+      "loadingAria": "Chargement du carrousel des programmes vedettes",
+      "mobileAria": "Bandeau mobile des programmes vedettes",
+      "subtitle": "Decouverte immersive",
+      "title": "Voyage Signature Maroc"
+    },
+    "filters": {
+      "aria": "Categories de programmes",
+      "all": "Tous"
+    },
+    "categories": {
+      "nature": "Nature",
+      "adventure": "Aventure",
+      "culture": "Culture",
+      "wellness": "Bien-etre",
+      "cityTours": "Visites de ville",
+      "beach": "Plage"
+    },
+    "grid": {
+      "aria": "Tous les programmes"
+    },
+    "featured": {
+      "aria": "Programme vedette",
+      "tag": "Programme Vedette",
+      "fallbackDescription": "Un itineraire signature pour des moments de voyage premium."
+    },
+    "valueProps": {
+      "aria": "Pourquoi choisir nos programmes",
+      "tag": "Pourquoi Nous Choisir",
+      "title": "Concu autour de votre voyage",
+      "items": [
+        {
+          "title": "Experiences selectionnees",
+          "description": "Chaque itineraire est soigneusement concu pour le confort, l'authenticite et une decouverte riche de sens."
+        },
+        {
+          "title": "Guides locaux de confiance",
+          "description": "Voyagez avec des hotes experimentes qui connaissent chaque region, chaque route et chaque histoire cachee."
+        },
+        {
+          "title": "Planification flexible",
+          "description": "Ajustez le rythme, les etapes et le style du programme selon vos objectifs de voyage."
+        },
+        {
+          "title": "Destinations premium",
+          "description": "Des echappees cotiers aux aventures en montagne, profitez d'itineraires raffines et de moments d'exception."
+        }
+      ]
+    },
+    "empty": {
+      "title": "Aucun programme disponible",
+      "description": "Il n'y a actuellement aucun programme actif dans cette categorie. Essayez un autre filtre ou revenez bientot."
+    },
+    "cta": {
+      "tag": "Commencez votre escapade",
+      "title": "Laissez-nous creer votre prochain programme premium au Maroc",
+      "description": "Partagez vos dates, votre style et vos envies. Nous construirons un voyage elegant et memorable avec une expertise locale de confiance.",
+      "primaryButton": "Reserver une consultation",
+      "secondaryButton": "Contacter notre equipe"
+    },
+    "tunisia": {
+      "aria": "Presentation de l'itineraire en Tunisie",
+      "tag": "Decouverte de la Tunisie",
+      "title": "Voyage Signature Tunisie",
+      "subtitle": "Cote, patrimoine, desert et oasis reunis dans un seul itineraire premium.",
+      "itinerary": {
+        "day1": {
+          "day": "Jour 1",
+          "title": "Arrivee a Sousse",
+          "route": "Arrivee aeroport -> Sousse",
+          "description": "Arrivee, transfert prive et premiere soiree detendue sur l'elegante cote tunisienne.",
+          "overnight": "Nuit dans un hotel 4 etoiles"
+        },
+        "day2": {
+          "day": "Jour 2",
+          "title": "Route du patrimoine cotier",
+          "route": "Sousse -> Monastir -> Mahdia",
+          "description": "Un itineraire cotier raffine entre charme des marinas, medina de caractere et vues sur la mer.",
+          "overnight": "Nuit dans un hotel 4 etoiles"
+        },
+        "day3": {
+          "day": "Jour 3",
+          "title": "De la cote a la porte du desert",
+          "route": "Mahdia -> El Jem -> Matmata -> Douz",
+          "description": "Decouvrez l'heritage romain et des paysages lunaires avant l'entree vers le Sahara.",
+          "overnight": "Nuit dans un hotel 4 etoiles"
+        },
+        "day4": {
+          "day": "Jour 4",
+          "title": "Transition vers les oasis",
+          "route": "Douz -> Chott El Jerid -> Nefta -> Tozeur",
+          "description": "Traversez les etendues de sel scintillantes et les palmeraies dans un voyage cinematographique vers le sud.",
+          "overnight": "Nuit dans un hotel 4 etoiles"
+        },
+        "day5": {
+          "day": "Jour 5",
+          "title": "Journee detente a Tozeur",
+          "route": "Sejour a Tozeur",
+          "description": "Une journee plus douce pour profiter de l'atmosphere des oasis, de la culture locale et de la lumiere du desert.",
+          "overnight": "Nuit dans un hotel 4 etoiles"
+        },
+        "day6": {
+          "day": "Jour 6",
+          "title": "Train panoramique et cite sacree",
+          "route": "Tozeur -> Metlaoui (Lezard Rouge) -> Kairouan",
+          "description": "Embarquez a bord du train mythique des canyons puis poursuivez vers l'un des joyaux spirituels de Tunisie.",
+          "overnight": "Nuit dans un hotel 4 etoiles"
+        },
+        "day7": {
+          "day": "Jour 7",
+          "title": "Culture et retour sur la cote",
+          "route": "Kairouan -> Kantaoui -> Sousse",
+          "description": "Decouverte matinale de Kairouan suivie d'un retour elegant vers la cote mediterraneenne.",
+          "overnight": "Nuit dans un hotel 4 etoiles"
+        },
+        "day8": {
+          "day": "Jour 8",
+          "title": "Depart ou prolongation",
+          "route": "Sousse -> Aeroport / Prolongation de sejour",
+          "description": "Transfert final avec la possibilite de prolonger votre sejour pour des moments encore plus personnalises.",
+          "overnight": "Jour de depart ou nuit supplementaire en option"
+        }
+      }
+    },
+    "common": {
+      "program": "Programme",
+      "travelProgram": "Programme de voyage",
+      "experience": "Experience",
+      "premiumFallback": "Un programme de voyage premium concu pour des moments memorables.",
+      "destinationLabel": "Destination",
+      "durationLabel": "Duree",
+      "priceLabel": "Prix",
+      "custom": "Sur mesure",
+      "flexible": "Flexible",
+      "tailoredPricing": "Tarification sur mesure",
+      "fromPrice": "A partir de ${price}$",
+      "view": "Voir",
+      "viewProgram": "Voir le programme",
+      "planTrip": "Planifier le voyage",
+      "learnMore": "En savoir plus",
+      "previous": "Precedent",
+      "next": "Suivant",
+      "goToItem": "Aller a l'element",
+      "fullDay": "Journee complete",
+      "halfDay": "Demi-journee",
+      "twoToThreeHours": "2 a 3 heures",
+      "threeToFourHours": "3 a 4 heures"
+    },
+    "programData": {
+      "paradise-valley-atlas-mountains": {
+        "title": "Vallee du Paradis et montagnes de l'Atlas",
+        "description": "Une journee rafraichissante entre vallees bordees de palmiers, piscines naturelles et routes de montagne pres d'Agadir.",
+        "destination": "Agadir / Taghazout",
+        "badge": "Signature",
+        "highlights": [
+          "Piscines naturelles et cascades",
+          "Randonnee dans une vallee verdoyante",
+          "Paysages montagneux et air pur"
+        ]
+      },
+      "jeep-safari-desert-adventure": {
+        "title": "Aventure Safari Jeep dans le desert",
+        "description": "Traversez des cotes spectaculaires, des pistes desertiques et des villages berberes en expedition 4x4.",
+        "destination": "Agadir",
+        "highlights": [
+          "Aventure tout-terrain en 4x4",
+          "Grottes de pecheurs et plages sauvages",
+          "Flamants roses et faune locale",
+          "Dejeuner berbere tajine et couscous",
+          "Petites dunes sahariennes"
+        ]
+      },
+      "tafraoute-anti-atlas-mountains": {
+        "title": "Tafraoute et montagnes de l'Anti-Atlas",
+        "description": "Explorez les paysages surrealistes de granite rose et les routes d'oasis paisibles de Tafraoute.",
+        "destination": "Tafraoute",
+        "highlights": [
+          "Formations rocheuses uniques",
+          "Paysages d'oasis caches",
+          "Ambiance berbere authentique et paisible"
+        ]
+      },
+      "berber-village-cooking-experience": {
+        "title": "Experience culinaire en village berbere",
+        "description": "Cuisine marocaine traditionnelle et moments de partage avec des familles locales au pied de l'Atlas.",
+        "destination": "Montagnes de l'Atlas",
+        "badge": "Favori local",
+        "highlights": [
+          "Cuisine tajine et couscous",
+          "Ceremonie du the",
+          "Decouverte du mode de vie berbere"
+        ]
+      },
+      "agadir-city-tour": {
+        "title": "Visite de la ville d'Agadir",
+        "description": "Decouvrez Agadir moderne et ses points de vue historiques a travers des arrets soigneusement choisis.",
+        "destination": "Agadir",
+        "highlights": [
+          "Vues panoramiques en telepherique",
+          "Crocodiles et jardin botanique",
+          "Etapes urbaines et pauses gourmandes locales"
+        ]
+      },
+      "hammam-spa-experience": {
+        "title": "Experience Hammam et Spa",
+        "description": "Ressourcez-vous avec un rituel bien-etre raffine inspire du patrimoine marocain du spa.",
+        "destination": "Agadir",
+        "highlights": [
+          "Hammam traditionnel",
+          "Exfoliation au savon noir",
+          "Massage relaxant aux huiles"
+        ]
+      },
+      "taroudant-tiout-day-trip": {
+        "title": "Excursion Taroudant et Tiout",
+        "description": "Plongez dans les villes patrimoniales du Maroc entre souks, vues sur les kasbahs et paysages d'oasis.",
+        "destination": "Taroudant / Tiout",
+        "highlights": [
+          "Remparts anciens et souks",
+          "Oasis et kasbah",
+          "Campagne marocaine authentique"
+        ]
+      },
+      "surf-experience": {
+        "title": "Experience Surf",
+        "description": "Profitez des vagues de l'Atlantique avec un encadrement pro et une ambiance cotiere decontractee.",
+        "destination": "Agadir",
+        "highlights": [
+          "Cours de surf tous niveaux",
+          "Vagues de l'Atlantique",
+          "Culture surf marocaine"
+        ]
+      },
+      "quad-sand-adventure": {
+        "title": "Aventure Quad sur sable",
+        "description": "Une sortie quad energique entre pistes de plage, chemins de montagne et instants de coucher de soleil.",
+        "destination": "Taghazout",
+        "highlights": [
+          "Quad sur plage et montagne",
+          "Vues au coucher du soleil",
+          "Pause the en pleine nature"
+        ]
+      },
+      "essaouira-day-trip": {
+        "title": "Excursion d'une journee a Essaouira",
+        "description": "Partez vers la medina atlantique pour ses vues ocean, ses marches d'artisans et son charme historique.",
+        "destination": "Essaouira",
+        "highlights": [
+          "Medina historique",
+          "Vues sur l'ocean Atlantique",
+          "Port et marches d'artisans"
+        ]
+      }
+    }
+  },
+  "blog": {
+    "hero": {
+      "badge": "Atlas",
+      "title": "Des Histoires Faconnees pour l'Art du Voyage de Luxe",
+      "subtitle": "Explorez des recits immersifs, des destinations soigneusement selectionnees et une vision moderne du voyage, pensés pour celles et ceux qui aiment la beaute, le detail et les experiences memorables.",
+      "cta": "Explorer les Histoires"
+    },
+    "latest": {
+      "badge": "Les Plus Recents",
+      "title": "Derniers Recits"
+    },
+    "editors": {
+      "badge": "Selection Editoriale",
+      "title": "Choix de la Redaction"
+    },
+    "latestStories": {
+      "curated-escapes-in-georgia": {
+        "title": "Escapades Raffinees en Georgie: Vallees de Vin et Air de Montagne",
+        "excerpt": "Un itineraire elegant a travers les domaines de Kakheti, des degustations privees et des lodges au design soigné, avec le Caucase en toile de fond.",
+        "category": "Guides de Voyage",
+        "date": "6 Avril 2026",
+        "readTime": "6 min de lecture",
+        "imageAlt": "Paysage de montagne dramatique pour une escapade sur mesure"
+      },
+      "desert-luxury-under-stars": {
+        "title": "Luxe du Desert sous les Etoiles: Au-dela des Dunes",
+        "excerpt": "Des camps eclaires aux lanternes aux balades a dos de chameau a l'aube, decouvrez le calme du desert avec un confort haut de gamme.",
+        "category": "Aventure",
+        "date": "30 Mars 2026",
+        "readTime": "7 min de lecture",
+        "imageAlt": "Dunes du desert au coucher du soleil avec une ambiance cinematographique"
+      },
+      "boutique-stays-worth-detour": {
+        "title": "Des Sejours Boutique Qui Valent le Detour",
+        "excerpt": "Une selection d'adresses d'architecte ou savoir-faire, service et esprit du lieu se rencontrent dans chaque detail.",
+        "category": "Gastronomie & Sejour",
+        "date": "18 Mars 2026",
+        "readTime": "5 min de lecture",
+        "imageAlt": "Hebergement boutique de style kasbah aux textures naturelles"
+      },
+      "cultural-journeys-through-medinas": {
+        "title": "Voyages Culturels a Travers les Medinas Historiques",
+        "excerpt": "Parcourez la ville ancienne avec des historiens locaux, rencontrez des artisans en atelier prive et suivez les histoires cachees dans les remparts.",
+        "category": "Culture",
+        "date": "11 Mars 2026",
+        "readTime": "9 min de lecture",
+        "imageAlt": "Place de medina historique riche en couleurs et en textures"
+      },
+      "how-to-plan-luxury-travel-that-still-feels-personal": {
+        "title": "Comment Planifier un Voyage de Luxe Qui Reste Personnel",
+        "excerpt": "Un cadre pratique pour equilibrer les incontournables, les moments lents et l'authenticite locale.",
+        "category": "Guides de Voyage",
+        "date": "2 Mars 2026",
+        "readTime": "6 min de lecture",
+        "imageAlt": "Destination cotiere elegante avec vue sur la mer"
+      },
+      "wellness-rituals-of-north-africa": {
+        "title": "Rituels Bien-etre d'Afrique du Nord: Hammams et Espaces de Soin",
+        "excerpt": "Un guide sensoriel des traditions regenerantes, des suites hammam privees et des sanctuaires spa apaisants.",
+        "category": "Escapades de Luxe",
+        "date": "24 Fevrier 2026",
+        "readTime": "7 min de lecture",
+        "imageAlt": "Interieur de hammam inspire du spa avec une lumiere douce"
+      }
+    }
+  },
+  "blogArticlePersonal": {
+    "meta": {
+      "category": "Guides de Voyage",
+      "title": "Comment Planifier un Voyage de Luxe Qui Reste Personnel",
+      "subtitle": "Le luxe ne doit jamais etre standardise. Les voyages memorables se construisent autour de la personne, pas autour d'un modele.",
+      "date": "2 Mars 2026",
+      "readTime": "6 min de lecture",
+      "imageAlt": "Destination cotiere haut de gamme avec vue panoramique sur la mer"
+    },
+    "sections": {
+      "s1": {
+        "title": "Pourquoi le voyage de luxe peut-il sembler trop uniforme ?",
+        "body": "De nombreux itineraires premium paraissent parfaits sur le papier, mais se ressemblent une fois sur place. Ils alignent lieux iconiques et hotels prestigieux, sans toujours refleter la personnalite du voyageur. Le vrai luxe commence quand chaque detail est ajuste: rythme, intimite, centres d'interet et ressenti."
+      },
+      "s2": {
+        "title": "Commencez par le voyageur, pas par le forfait",
+        "body": "Posez les bonnes questions avant de choisir les destinations: quel type de matin vous energise, dynamisme social ou calme prive, culture ou nature ou detente? Ces reponses dessinent un voyage qui vous ressemble des le premier jour."
+      },
+      "s3": {
+        "title": "Moins d'experiences, plus de sens",
+        "body": "Le luxe n'est pas une accumulation d'activites. Une rencontre privee avec un artisan d'exception peut marquer davantage que trois visites enchaines. Privilegiez les moments qui ont une vraie valeur humaine et laissez-leur du temps."
+      },
+      "s4": {
+        "title": "Equilibrez incontournables et instants confidentiels",
+        "body": "Les sites emblematiques comptent, mais ils gagnent en intensite lorsqu'ils alternent avec des pauses choisies. Associez une visite de medina a un the prive au coucher du soleil, ou un lieu iconique a une soiree paisible en bord de mer."
+      },
+      "s5": {
+        "title": "Hotels et transferts definissent l'atmosphere du voyage",
+        "body": "L'hebergement et les deplacements ne sont pas de simples details logistiques. Un riad serein, un lodge de montagne au design soigne, ou des transferts prives fluides peuvent proteger votre energie et elever chaque journee."
+      },
+      "s6": {
+        "title": "Laissez une marge intentionnelle dans le programme",
+        "body": "Gardez volontairement des plages non remplies. Une meteo changeante, une envie du moment, ou une recommandation locale spontanee peuvent offrir vos plus beaux souvenirs. Cette flexibilite maitrisée rend le voyage vivant et elegant."
+      },
+      "s7": {
+        "title": "Misez sur l'authenticite locale, pas seulement sur les grands noms",
+        "body": "La valeur ne se trouve pas uniquement dans une enseigne celebre, mais dans l'excellence locale. Un guide experimente, un hote attentionne, et des experiences ancrees dans le territoire donnent une ame au voyage."
+      },
+      "s8": {
+        "title": "Conclusion",
+        "body": "Un voyage de luxe personnel est une curation intelligente avec une touche humaine. Quand vous planifiez avec intention, rythme equilibre et details significatifs, chaque moment vous ressemble davantage."
+      }
+    },
+    "quote": "Les meilleurs voyages personnels ne sont pas les plus charges, mais les plus intentionnels et precis dans les details.",
+    "keyTakeaways": {
+      "1": "Concevez le voyage selon le rythme du voyageur, pas selon des modeles standard.",
+      "2": "Preferez moins d'activites, mais plus de profondeur.",
+      "3": "Utilisez hotels, transferts et cadence pour creer l'emotion du voyage.",
+      "4": "Laissez de l'espace a la decouverte pour garder une experience vivante."
+    },
+    "quickNotes": {
+      "1": "Duree ideale: 7 a 10 jours pour un bel equilibre entre confort et profondeur.",
+      "2": "Rythme quotidien: une experience principale avec une fenetre flexible.",
+      "3": "Style de deplacement: prive et fluide pour preserver energie et humeur.",
+      "4": "Conseil reservation: validez d'abord les hebergements signatures, puis construisez autour."
+    },
+    "relatedDestinations": {
+      "1": "Marrakech",
+      "2": "Tanger",
+      "3": "Montagnes de l'Atlas",
+      "4": "Fes"
+    },
+    "sidebars": {
+      "keyTakeawaysTitle": "Points Essentiels",
+      "quickNotesTitle": "Notes Voyage Rapides",
+      "relatedDestinationsTitle": "Destinations Suggerees",
+      "planCardTag": "Envie d'un Voyage Pense Pour Vous ?",
+      "planCardTitle": "Concevons un itineraire qui reflete votre style de vie et vos envies.",
+      "planCardCta": "Demander un Voyage Sur Mesure"
+    },
+    "bottomCta": {
+      "tag": "Planifiez Votre Voyage",
+      "title": "Pret pour un voyage entierement adapte a vous ?",
+      "subtitle": "Contactez Akheel pour creer un programme premium entre incontournables, experiences privees et rythme de voyage maitrise.",
+      "primaryCta": "Demander un Voyage Sur Mesure",
+      "secondaryCta": "Parler a Akheel"
+    }
+  },
+  "blogArticleMedinas": {
+    "hero": {
+      "category": "Culture",
+      "title": "Voyages Culturels a Travers les Medinas Historiques",
+      "subtitle": "Entrez dans des quartiers intemporels ou ruelles, savoir-faire et architecture racontent l'ame la plus elegante de la destination.",
+      "author": "Par l'equipe editoriale Atlas",
+      "date": "11 Mars 2026",
+      "readTime": "9 min de lecture",
+      "imageAlt": "Medina historique avec etals d'artisanat et lumiere doree"
+    },
+    "intro": "La medina n'est pas seulement un centre ancien, c'est une histoire vivante. Dans ses allees sinueuses, ses portes sculptées et ses patios caches, vous ressentez des siecles d'artisanat, d'hospitalite et de gestes quotidiens. C'est un voyage culturel immersif, sensible et profondement memoriel.",
+    "sections": {
+      "s1": {
+        "title": "Pourquoi la medina est l'ame d'une destination",
+        "body": "La medina conserve la memoire emotionnelle de la ville. Elle protege les metiers, l'architecture et les usages qui faconnent l'identite locale. Pour un voyageur exigeant, c'est le lieu ou l'authenticite prend tout son sens."
+      },
+      "s2": {
+        "title": "Marcher entre histoire, architecture et vie quotidienne",
+        "body": "Parcourir la medina, c'est traverser le temps. Zelliges, arches, fontaines et facades racontent le passe, tandis que boulangeries, cafes de quartier et marches du matin incarnent le present. Chaque detour devient une decouverte."
+      },
+      "s3": {
+        "title": "Patios secrets, ateliers d'artisans et recits locaux",
+        "body": "Au-dela des axes connus, la medina revele ses plus beaux tresors: patios intimes, ateliers de tissage, de metal ou de calligraphie. L'echange avec les artisans offre une lecture du lieu bien plus riche qu'une simple liste d'incontournables."
+      },
+      "s4": {
+        "title": "Explorer la medina avec raffinement et authenticite",
+        "body": "Les plus belles experiences sont celles que l'on vit sans precipitations. Choisissez un accompagnement local experimente, privilegiez les heures calmes, et laissez place aux rencontres spontannees. La qualite du rythme transforme la visite."
+      },
+      "s5": {
+        "title": "L'equilibre entre culture, confort et experience privee",
+        "body": "L'immersion culturelle gagne en intensite lorsqu'elle s'accorde a un confort bien pense: riad serein, acces prive hors affluence, ou halte gastronomique confidentielle. Cet equilibre donne au voyage une elegance editoriale rare."
+      },
+      "s6": {
+        "title": "A retenir",
+        "body": "Les medinas historiques invitent a voyager plus lentement, a regarder autrement, et a ressentir davantage. Explorees avec sensibilite, elles deviennent bien plus qu'un decor: elles deviennent le coeur du voyage."
+      }
+    },
+    "quote": "Dans la medina, le patrimoine ne se contemple pas de loin, il se vit dans chaque porte, chaque atelier et chaque rituel du matin.",
+    "cta": {
+      "tag": "Concevez Votre Evasion Culturelle",
+      "title": "Pret a vivre la culture avec elegance et profondeur ?",
+      "subtitle": "Confiez a Akheel la creation d'un parcours culturel sur mesure a travers les medinas les plus fascinantes, avec rythme raffine, acces privilegie et details memorables.",
+      "primary": "Planifier Votre Voyage",
+      "secondary": "Demander un Voyage Sur Mesure"
+    }
+  },
   "hero": {
     "aria": "Hero",
     "imageAlt": "Dunes dorees du desert saoudien au coucher du soleil",

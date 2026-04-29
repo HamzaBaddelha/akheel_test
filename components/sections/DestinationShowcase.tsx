@@ -10,7 +10,15 @@ import { useI18n } from "@/components/i18n/I18nProvider";
 import { destinations } from "@/lib/trips";
 import { fadeInUp, staggerContainer, viewportOnce } from "@/lib/animations";
 
-function CardContent({ dest, t }: { dest: (typeof destinations)[number]; t: (key: string) => string }) {
+function CardContent({
+  dest,
+  isRTL,
+  t,
+}: {
+  dest: (typeof destinations)[number];
+  isRTL: boolean;
+  t: (key: string) => string;
+}) {
   const isLightTextCard =
     dest.id === "tunis" || dest.id === "morocco-tours" || dest.id === "saudi-arabia";
 
@@ -27,7 +35,9 @@ function CardContent({ dest, t }: { dest: (typeof destinations)[number]; t: (key
         <div className="absolute inset-0 bg-gradient-to-t from-primary/75 via-primary/35 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(225,224,212,0.25),transparent_55%)]" />
         <h3
-          className={`absolute bottom-4 left-5 font-serif text-2xl font-bold uppercase tracking-wide ${
+          className={`absolute bottom-4 font-serif text-2xl font-bold uppercase tracking-wide ${
+            isRTL ? "right-5 text-right" : "left-5 text-left"
+          } ${
             isLightTextCard ? "text-white" : "text-primary-foreground"
           }`}
         >
@@ -45,7 +55,7 @@ function CardContent({ dest, t }: { dest: (typeof destinations)[number]; t: (key
           }`}
         />
         <p
-          className={`relative text-sm leading-relaxed ${
+          className={`relative text-sm leading-relaxed ${isRTL ? "text-right" : "text-left"} ${
             isLightTextCard ? "text-white/95" : "text-foreground/80"
           }`}
         >
@@ -53,12 +63,16 @@ function CardContent({ dest, t }: { dest: (typeof destinations)[number]; t: (key
         </p>
         <span
           className={`relative mt-4 inline-flex items-center gap-1 text-sm font-semibold ${
+            isRTL ? "flex-row-reverse" : ""
+          } ${
             isLightTextCard ? "text-white" : "text-primary"
           }`}
         >
           {t("destinations.explore")}
           <svg
-            className="h-4 w-4 transition-transform group-hover:translate-x-1"
+            className={`h-4 w-4 transition-transform ${
+              isRTL ? "group-hover:-translate-x-1" : "group-hover:translate-x-1"
+            }`}
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2}
@@ -74,7 +88,7 @@ function CardContent({ dest, t }: { dest: (typeof destinations)[number]; t: (key
 }
 
 export default function DestinationShowcase() {
-  const { t } = useI18n();
+  const { isRTL, t } = useI18n();
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   const scrollCards = (direction: "prev" | "next") => {
@@ -96,11 +110,11 @@ export default function DestinationShowcase() {
           subtitle={t("destinations.subtitle")}
         />
 
-        <div className="mb-6 flex justify-end gap-2">
+        <div className={`mb-6 flex gap-2 ${isRTL ? "justify-start" : "justify-end"}`}>
           <button
             type="button"
             aria-label={t("destinations.prevAria")}
-            onClick={() => scrollCards("prev")}
+            onClick={() => scrollCards(isRTL ? "next" : "prev")}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-accent/50 bg-background/75 text-primary shadow-sm backdrop-blur-md transition hover:bg-background"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -110,7 +124,7 @@ export default function DestinationShowcase() {
           <button
             type="button"
             aria-label={t("destinations.nextAria")}
-            onClick={() => scrollCards("next")}
+            onClick={() => scrollCards(isRTL ? "prev" : "next")}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-accent/50 bg-background/75 text-primary shadow-sm backdrop-blur-md transition hover:bg-background"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -121,11 +135,16 @@ export default function DestinationShowcase() {
 
         <motion.div
           ref={scrollerRef}
+          dir={isRTL ? "rtl" : "ltr"}
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className={
+            isRTL
+              ? "grid grid-cols-1 gap-5 pb-1 sm:flex sm:snap-x sm:snap-mandatory sm:gap-6 sm:overflow-x-auto sm:pb-4 sm:[scrollbar-width:none] sm:[&::-webkit-scrollbar]:hidden"
+              : "flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          }
         >
           {destinations.map((dest) => (
             <motion.article
@@ -135,15 +154,19 @@ export default function DestinationShowcase() {
               whileHover={{ y: -8, rotateX: 4, rotateY: -4, scale: 1.01 }}
               transition={{ type: "spring", stiffness: 260, damping: 18 }}
               style={{ transformStyle: "preserve-3d" }}
-              className="group relative shrink-0 basis-[86%] cursor-pointer snap-start sm:basis-[62%] lg:basis-[42%] xl:basis-[34%]"
+              className={`group relative cursor-pointer ${
+                isRTL
+                  ? "w-full snap-none sm:shrink-0 sm:basis-[62%] sm:snap-start lg:basis-[42%] xl:basis-[34%]"
+                  : "shrink-0 basis-[86%] snap-start sm:basis-[62%] lg:basis-[42%] xl:basis-[34%]"
+              }`}
             >
               <div className="pointer-events-none absolute inset-0 -z-10 rounded-[24px] bg-gradient-to-br from-secondary/35 to-primary/30 blur-xl" />
               {dest.href ? (
                 <Link href={dest.href} className="block">
-                  <CardContent dest={dest} t={t} />
+                  <CardContent dest={dest} isRTL={isRTL} t={t} />
                 </Link>
               ) : (
-                <CardContent dest={dest} t={t} />
+                <CardContent dest={dest} isRTL={isRTL} t={t} />
               )}
             </motion.article>
           ))}

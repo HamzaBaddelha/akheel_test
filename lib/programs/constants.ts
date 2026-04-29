@@ -52,7 +52,7 @@ export const PROGRAMS_SEED: Program[] = [
     title: "Paradise Valley & Atlas Mountains",
     shortDescription:
       "A refreshing day through palm-lined valleys, natural pools, and scenic mountain roads near Agadir.",
-    coverImage: "/assets/atlas-montain.jpg",
+    coverImage: "/assets/Paradise_Valley_&_Atlas_Mountains.jpg",
     destination: "Agadir / Taghazout",
     places: ["Paradise Valley", "Atlas Mountains", "Immouzer"],
     highlights: [
@@ -74,7 +74,7 @@ export const PROGRAMS_SEED: Program[] = [
     title: "Jeep Safari Desert Adventure",
     shortDescription:
       "Ride across dramatic coastlines, desert tracks, and Berber villages in a 4x4 expedition.",
-    coverImage: "/assets/desert.webp",
+    coverImage: "/assets/4x4_vehicles_driving.png",
     destination: "Agadir",
     places: [
       "Souss Massa National Park",
@@ -121,7 +121,7 @@ export const PROGRAMS_SEED: Program[] = [
     title: "Berber Village Cooking Experience",
     shortDescription:
       "Cook traditional Moroccan dishes and share stories with local families in the Atlas foothills.",
-    coverImage: "/assets/mosque.jpg",
+    coverImage: "/assets/Berber_Village_Cooking_Experience.jpg",
     destination: "Atlas Mountains",
     places: ["Atlas Mountains", "Traditional Berber villages"],
     highlights: [
@@ -202,7 +202,7 @@ export const PROGRAMS_SEED: Program[] = [
     title: "Surf Experience",
     shortDescription:
       "Catch Atlantic waves with pro instruction and a laid-back coastal atmosphere.",
-    coverImage: "/assets/moroccoblue.jpg",
+    coverImage: "/assets/Surf_Experience.jpg",
     destination: "Agadir",
     places: ["Agadir Beach"],
     highlights: [
@@ -242,7 +242,7 @@ export const PROGRAMS_SEED: Program[] = [
     title: "Essaouira Day Trip",
     shortDescription:
       "Travel to the Atlantic medina for ocean views, artisan markets, and historic charm.",
-    coverImage: "/assets/tanger.jpg",
+    coverImage: "/assets/Essaouira_Day_Trip.jpg",
     destination: "Essaouira",
     places: ["Essaouira", "Essaouira Medina"],
     highlights: ["Historic medina", "Atlantic ocean views", "Port & artisan markets"],

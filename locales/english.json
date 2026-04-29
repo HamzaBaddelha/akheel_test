@@ -17,6 +17,358 @@
   "programs": {
     "heroTitle": "Signature Journeys Crafted for Elevated Travel"
   },
+  "programsPage": {
+    "hero": {
+      "tag": "Programs",
+      "title": "Explore Exceptional Journeys Beyond Ordinary Travel",
+      "subtitle": "Discover elegant, handcrafted journeys across coastlines, cities, deserts, and mountains.",
+      "exploreCta": "Explore Programs",
+      "planCta": "Plan Your Journey",
+      "slides": {
+        "parcPerdicarisAlt": "Parc Perdicaris in Tangier scenic coastline",
+        "tafraouteAlt": "Tafraoute mountain village and waterfall",
+        "atlasParadiseAlt": "Atlas Paradise crystal-clear canyon waters"
+      }
+    },
+    "carousel": {
+      "loadingAria": "Featured programs carousel loading",
+      "mobileAria": "Featured programs rail",
+      "subtitle": "Immersive Discovery",
+      "title": "Morocco Signature Journey"
+    },
+    "filters": {
+      "aria": "Program categories",
+      "all": "All"
+    },
+    "categories": {
+      "nature": "Nature",
+      "adventure": "Adventure",
+      "culture": "Culture",
+      "wellness": "Wellness",
+      "cityTours": "City Tours",
+      "beach": "Beach"
+    },
+    "grid": {
+      "aria": "All programs"
+    },
+    "featured": {
+      "aria": "Featured program",
+      "tag": "Featured Program",
+      "fallbackDescription": "A signature itinerary for premium travel moments."
+    },
+    "valueProps": {
+      "aria": "Why choose our programs",
+      "tag": "Why Choose Us",
+      "title": "Designed Around Your Journey",
+      "items": [
+        {
+          "title": "Curated Experiences",
+          "description": "Each itinerary is carefully designed for comfort, authenticity, and meaningful discovery."
+        },
+        {
+          "title": "Trusted Local Guides",
+          "description": "Travel with knowledgeable hosts who understand every region, route, and hidden story."
+        },
+        {
+          "title": "Flexible Planning",
+          "description": "Adjust the pace, stops, and style of your program to fit your travel goals."
+        },
+        {
+          "title": "Premium Destinations",
+          "description": "From coastal escapes to mountain journeys, enjoy elevated routes and refined moments."
+        }
+      ]
+    },
+    "empty": {
+      "title": "No Programs Available",
+      "description": "There are currently no active programs in this category. Please try another filter or check back soon."
+    },
+    "cta": {
+      "tag": "Begin Your Escape",
+      "title": "Let Us Craft Your Next Premium Moroccan Program",
+      "description": "Tell us your dates, style, and interests. We will design a polished, memorable journey with trusted local expertise.",
+      "primaryButton": "Book a Consultation",
+      "secondaryButton": "Contact Our Team"
+    },
+    "tunisia": {
+      "aria": "Tunisia itinerary showcase",
+      "tag": "Tunisia Discovery",
+      "title": "Tunisia Signature Journey",
+      "subtitle": "Coast, heritage, desert, and oasis landscapes curated into one premium itinerary.",
+      "itinerary": {
+        "day1": {
+          "day": "Day 1",
+          "title": "Arrival In Sousse",
+          "route": "Airport Arrival -> Sousse",
+          "description": "Arrival, private transfer, and a relaxed first evening on Tunisia's elegant coast.",
+          "overnight": "Overnight in a 4-star hotel"
+        },
+        "day2": {
+          "day": "Day 2",
+          "title": "Coastal Heritage Drive",
+          "route": "Sousse -> Monastir -> Mahdia",
+          "description": "A refined coastal route through marina charm, medina character, and sea views.",
+          "overnight": "Overnight in a 4-star hotel"
+        },
+        "day3": {
+          "day": "Day 3",
+          "title": "From Coast To Desert Gate",
+          "route": "Mahdia -> El Djem -> Matmata -> Douz",
+          "description": "Discover Roman legacy and lunar landscapes before entering the Sahara gateway.",
+          "overnight": "Overnight in a 4-star hotel"
+        },
+        "day4": {
+          "day": "Day 4",
+          "title": "Oasis Transition",
+          "route": "Douz -> Chott El Jerid -> Nefta -> Touzeur",
+          "description": "Cross shimmering salt flats and palm oases on a cinematic southbound journey.",
+          "overnight": "Overnight in a 4-star hotel"
+        },
+        "day5": {
+          "day": "Day 5",
+          "title": "Touzeur Leisure Day",
+          "route": "Touzeur Stay",
+          "description": "A slower luxury day to enjoy oasis ambiance, local culture, and desert light.",
+          "overnight": "Overnight in a 4-star hotel"
+        },
+        "day6": {
+          "day": "Day 6",
+          "title": "Scenic Rail & Sacred City",
+          "route": "Touzeur -> Metlaoui (Lezard Rouge) -> Kairouan",
+          "description": "Ride the iconic canyon train, then continue to one of Tunisia's spiritual jewels.",
+          "overnight": "Overnight in a 4-star hotel"
+        },
+        "day7": {
+          "day": "Day 7",
+          "title": "Culture & Coast Return",
+          "route": "Kairouan -> Kantaoui -> Sousse",
+          "description": "Morning discovery in Kairouan followed by a polished return to the Mediterranean coast.",
+          "overnight": "Overnight in a 4-star hotel"
+        },
+        "day8": {
+          "day": "Day 8",
+          "title": "Departure Or Extension",
+          "route": "Sousse -> Airport / Holiday Extension",
+          "description": "Final transfer with the option to extend your stay for more tailored moments.",
+          "overnight": "Departure day or optional additional stay"
+        }
+      }
+    },
+    "common": {
+      "program": "Program",
+      "travelProgram": "Travel program",
+      "experience": "Experience",
+      "premiumFallback": "A premium travel program designed for memorable moments.",
+      "destinationLabel": "Destination",
+      "durationLabel": "Duration",
+      "priceLabel": "Price",
+      "custom": "Custom",
+      "flexible": "Flexible",
+      "tailoredPricing": "Tailored pricing",
+      "fromPrice": "From ${price}",
+      "view": "View",
+      "viewProgram": "View Program",
+      "planTrip": "Plan Trip",
+      "learnMore": "Learn more",
+      "previous": "Previous",
+      "next": "Next",
+      "goToItem": "Go to item",
+      "fullDay": "Full day",
+      "halfDay": "Half day",
+      "twoToThreeHours": "2 to 3 hours",
+      "threeToFourHours": "3 to 4 hours"
+    }
+  },
+  "blog": {
+    "hero": {
+      "badge": "The Atlas",
+      "title": "Stories Crafted for the Art of Luxury Travel",
+      "subtitle": "Explore immersive narratives, curated destinations, and modern travel perspectives designed for readers who value beauty, detail, and meaningful journeys.",
+      "cta": "Explore Stories"
+    },
+    "latest": {
+      "badge": "Latest",
+      "title": "Latest Stories"
+    },
+    "editors": {
+      "badge": "Editorial Selection",
+      "title": "Editor's Picks"
+    },
+    "latestStories": {
+      "curated-escapes-in-georgia": {
+        "title": "Curated Escapes in Georgia: Wine Valleys and Mountain Air",
+        "excerpt": "A refined route through Kakheti estates, private tastings, and design-forward lodges framed by the Caucasus.",
+        "category": "Travel Guides",
+        "date": "April 6, 2026",
+        "readTime": "6 min read",
+        "imageAlt": "Mountain landscape with dramatic sky for a curated escape"
+      },
+      "desert-luxury-under-stars": {
+        "title": "Desert Luxury Under the Stars: Beyond the Dunes",
+        "excerpt": "From lantern-lit camps to dawn camel rides, discover how to experience desert stillness with elevated comfort.",
+        "category": "Adventure",
+        "date": "March 30, 2026",
+        "readTime": "7 min read",
+        "imageAlt": "Desert dunes at sunset with warm cinematic tones"
+      },
+      "boutique-stays-worth-detour": {
+        "title": "Boutique Stays Worth the Detour",
+        "excerpt": "A shortlist of architect-led properties where craft, service, and place meet in unforgettable detail.",
+        "category": "Food & Stay",
+        "date": "March 18, 2026",
+        "readTime": "5 min read",
+        "imageAlt": "Boutique kasbah-style accommodation with earthy textures"
+      },
+      "cultural-journeys-through-medinas": {
+        "title": "Cultural Journeys Through Historic Medinas",
+        "excerpt": "Walk with local historians, meet artisans in private ateliers, and trace stories hidden in old city walls.",
+        "category": "Culture",
+        "date": "March 11, 2026",
+        "readTime": "9 min read",
+        "imageAlt": "Historic medina square filled with color and texture"
+      },
+      "how-to-plan-luxury-travel-that-still-feels-personal": {
+        "title": "How to Plan Luxury Travel That Still Feels Personal",
+        "excerpt": "A practical framework for balancing iconic highlights with slow moments and local authenticity.",
+        "category": "Travel Guides",
+        "date": "March 2, 2026",
+        "readTime": "6 min read",
+        "imageAlt": "Elegant coastal destination with blue sea and cityscape"
+      },
+      "wellness-rituals-of-north-africa": {
+        "title": "Wellness Rituals of North Africa: Hammams and Healing Spaces",
+        "excerpt": "A sensorial guide to restorative traditions, private hammam suites, and serene spa sanctuaries.",
+        "category": "Luxury Escapes",
+        "date": "February 24, 2026",
+        "readTime": "7 min read",
+        "imageAlt": "Spa-inspired hammam interior with soft ambient lighting"
+      }
+    }
+  },
+  "blogArticlePersonal": {
+    "meta": {
+      "category": "Travel Guides",
+      "title": "How to Plan Luxury Travel That Still Feels Personal",
+      "subtitle": "Luxury should never feel pre-packaged. The journeys you remember most are designed around people, not templates.",
+      "date": "March 2, 2026",
+      "readTime": "6 min read",
+      "imageAlt": "Luxury coastal destination with a panoramic sea view"
+    },
+    "sections": {
+      "s1": {
+        "title": "Why does luxury travel sometimes feel generic?",
+        "body": "Many luxury itineraries look perfect on paper yet feel repetitive in reality. They feature iconic landmarks and premium hotels, but may overlook the traveler behind the booking. True luxury starts when every detail is tailored: pace, privacy, personal interests, and emotional rhythm."
+      },
+      "s2": {
+        "title": "Start with the traveler, not the package",
+        "body": "Ask deeper questions before choosing destinations: what kind of morning gives you energy, social buzz or private calm, culture or nature or pure rest? These answers shape an itinerary that feels like you from day one."
+      },
+      "s3": {
+        "title": "Choose fewer experiences, but make them meaningful",
+        "body": "Luxury is not about doing more. A private visit to a master artisan can leave a deeper memory than three rushed stops. Prioritize moments with emotional value and give them enough time. The result is depth instead of fatigue."
+      },
+      "s4": {
+        "title": "Balance iconic highlights with private quiet moments",
+        "body": "Landmarks matter, but they become richer when paired with stillness. Combine a guided old-city walk with a private rooftop tea at sunset, or an iconic site with a serene coastal evening. This contrast creates an elegant, emotional journey."
+      },
+      "s5": {
+        "title": "Use hotels and transfers to shape the journey's mood",
+        "body": "Accommodation and transport are not just logistics. They define how each day feels. A peaceful riad, a design-led mountain lodge, or seamless private transfers can preserve your energy and elevate every experience."
+      },
+      "s6": {
+        "title": "Leave intentional space in the itinerary",
+        "body": "Protect unstructured time on purpose. Weather shifts, changing moods, or a spontaneous local recommendation can create your favorite memory. Smart flexibility keeps quality high while allowing discovery to feel effortless."
+      },
+      "s7": {
+        "title": "Bet on local character, not famous names alone",
+        "body": "Value is not only in a headline brand, but in authentic excellence. The right local guide, a thoughtful host, and experiences rooted in place give a trip its soul. Strong local partnerships turn luxury into true personalization."
+      },
+      "s8": {
+        "title": "Final thought",
+        "body": "Personal luxury travel is thoughtful curation with a human touch. When you plan with intention, balanced pacing, and meaningful details, every moment feels closer to you. That is the difference between a beautiful trip and an unforgettable one."
+      }
+    },
+    "quote": "The best personal journeys are not the busiest ones, but the most intentional and detail-aware.",
+    "keyTakeaways": {
+      "1": "Design around the traveler's rhythm, not supplier templates.",
+      "2": "Prioritize fewer, deeper experiences over crowded schedules.",
+      "3": "Use hotels, transfers, and pacing to shape the journey's feeling.",
+      "4": "Keep room for discovery so the trip stays alive and personal."
+    },
+    "quickNotes": {
+      "1": "Ideal duration: 7 to 10 days for balance between depth and comfort.",
+      "2": "Daily flow: one key experience plus a flexible enjoyment window.",
+      "3": "Transport style: private and seamless to protect energy and mood.",
+      "4": "Booking tip: secure standout stays first, then build around them."
+    },
+    "relatedDestinations": {
+      "1": "Marrakech",
+      "2": "Tangier",
+      "3": "Atlas Mountains",
+      "4": "Fes"
+    },
+    "sidebars": {
+      "keyTakeawaysTitle": "Key Takeaways",
+      "quickNotesTitle": "Quick Travel Notes",
+      "relatedDestinationsTitle": "Suggested Destinations",
+      "planCardTag": "Want a Trip Built Around You?",
+      "planCardTitle": "Let's design your journey to match your taste and lifestyle.",
+      "planCardCta": "Request a Custom Trip"
+    },
+    "bottomCta": {
+      "tag": "Plan Your Trip",
+      "title": "Ready for a journey tailored entirely to you?",
+      "subtitle": "Connect with Akheel to craft a premium itinerary balancing iconic highlights, private experiences, and a thoughtful travel pace.",
+      "primaryCta": "Request a Custom Trip",
+      "secondaryCta": "Talk to Akheel"
+    }
+  },
+  "blogArticleMedinas": {
+    "hero": {
+      "category": "Culture",
+      "title": "Cultural Journeys Through Historic Medinas",
+      "subtitle": "Step into timeless quarters where carved doors, artisan ateliers, and sunlit alleys reveal the elegant heartbeat of a destination.",
+      "author": "By Atlas Editorial Team",
+      "date": "March 11, 2026",
+      "readTime": "9 min read",
+      "imageAlt": "Historic medina market with handcrafted goods and warm golden light"
+    },
+    "intro": "Historic medinas are not simply old city centers; they are living stories. In every winding alley, you feel centuries of craftsmanship, hospitality, and daily ritual. The scent of cedar and spice, the rhythm of footsteps over stone, and the quiet beauty of hidden courtyards create a journey that feels deeply cultural and unmistakably personal.",
+    "sections": {
+      "s1": {
+        "title": "Why medinas are the soul of a destination",
+        "body": "A medina holds the emotional memory of a city. It preserves architecture, local trades, and social life in a way modern districts rarely can. For culturally curious travelers, this is where place, identity, and heritage come together with authenticity."
+      },
+      "s2": {
+        "title": "Walking through history, architecture, and daily life",
+        "body": "To walk a medina is to move through layers of time. Stucco arches, mosaic details, and old fountains speak of history, while open bakeries, neighborhood cafes, and morning markets keep the present alive. Every turn offers both context and surprise."
+      },
+      "s3": {
+        "title": "Hidden courtyards, artisan workshops, and local stories",
+        "body": "Beyond the main passages, quiet courtyards and private workshops reveal the true artistry of medina life. Conversations with calligraphers, weavers, and metalworkers bring a richer understanding of culture than any checklist of landmarks ever could."
+      },
+      "s4": {
+        "title": "How to explore medinas in a refined and authentic way",
+        "body": "The most rewarding visits are intentional and unhurried. Travel with a knowledgeable local host, start early for a gentler pace, and leave space for spontaneous discoveries. Choose depth over volume, and the medina opens itself with grace."
+      },
+      "s5": {
+        "title": "Balancing culture, comfort, and private experience",
+        "body": "Cultural immersion feels even more memorable when paired with thoughtful comfort: a serene riad, a private after-hours tour, or a curated culinary stop in a hidden courtyard. This balance transforms sightseeing into an elegant, story-led experience."
+      },
+      "s6": {
+        "title": "Final takeaway",
+        "body": "Historic medinas invite you to travel slower, notice more, and connect deeper. When explored with sensitivity and style, they become far more than a destination highlight; they become the soul of the journey itself."
+      }
+    },
+    "quote": "In the medina, heritage is not displayed behind glass, it is lived in every doorway, workshop, and morning ritual.",
+    "cta": {
+      "tag": "Design Your Journey",
+      "title": "Ready to experience culture with elegance and depth?",
+      "subtitle": "Let Akheel craft a personalized cultural escape through the most captivating medinas, with refined pacing, private access, and unforgettable detail.",
+      "primary": "Plan Your Trip",
+      "secondary": "Request a Custom Journey"
+    }
+  },
   "hero": {
     "aria": "Hero",
     "imageAlt": "Golden Saudi desert dunes at sunset",

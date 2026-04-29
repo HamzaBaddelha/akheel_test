@@ -30,7 +30,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main>
+      <main className="overflow-x-clip">
         <Hero />
         <DestinationShowcase />
         <DiscoverMore />

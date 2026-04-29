@@ -1,3 +1,7 @@
+"use client";
+
+import { useI18n } from "@/components/i18n/I18nProvider";
+
 type Props = {
   categories: string[];
   activeCategory: string;
@@ -9,8 +13,19 @@ export default function ProgramsFilters({
   activeCategory,
   onSelect,
 }: Props) {
+  const { t } = useI18n();
+  const categoryLabelMap: Record<string, string> = {
+    All: t("programsPage.filters.all"),
+    Nature: t("programsPage.categories.nature"),
+    Adventure: t("programsPage.categories.adventure"),
+    Culture: t("programsPage.categories.culture"),
+    Wellness: t("programsPage.categories.wellness"),
+    "City Tours": t("programsPage.categories.cityTours"),
+    Beach: t("programsPage.categories.beach"),
+  };
+
   return (
-    <section aria-label="Program categories">
+    <section aria-label={t("programsPage.filters.aria")}>
       <div className="flex flex-wrap gap-2.5 sm:gap-3">
         {categories.map((category) => (
           <button
@@ -24,7 +39,7 @@ export default function ProgramsFilters({
                 : "border-[#2c2216]/20 bg-[#f4f2ea] text-[#2c2216]/80 hover:border-[#999570] hover:text-[#2c2216]"
             }`}
           >
-            {category}
+            {categoryLabelMap[category] || category}
           </button>
         ))}
       </div>
