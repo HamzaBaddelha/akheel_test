@@ -70,17 +70,17 @@ export function buildMobileFlightTimeline(
   const sectionDuration = 1;
   let delay = 0;
 
-  timeline.to(plane.position, { x: -16, y: -8, z: -45, ease: "power1.out" }, delay);
+  timeline.to(plane.position, { x: -12, y: -6, z: -95, ease: "power1.out" }, delay);
 
   delay += sectionDuration;
   timeline.to(plane.rotation, { x: tau * 0.2, y: tau * 0.08, z: -tau * 0.04, ease: "power2.inOut" }, delay);
-  timeline.to(plane.position, { x: 18, y: -2, z: -20, ease: "power2.inOut" }, delay);
+  timeline.to(plane.position, { x: 14, y: -2, z: -55, ease: "power2.inOut" }, delay);
 
   delay += sectionDuration;
   timeline.to(plane.rotation, { x: tau * 0.18, y: tau * 0.35, z: tau * 0.08, ease: "power2.inOut" }, delay);
-  timeline.to(plane.position, { x: -10, y: 6, z: 38, ease: "power2.inOut" }, delay);
+  timeline.to(plane.position, { x: -8, y: 5, z: -5, ease: "power2.inOut" }, delay);
 
   delay += sectionDuration;
-  timeline.to(plane.rotation, { x: tau * 0.02, y: tau * 0.72, z: 0, ease: "power1.inOut" }, delay);
-  timeline.to(plane.position, { x: 0, y: 18, z: 170, ease: "power1.in" }, delay);
+  timeline.to(plane.rotation, { x: tau * 0.05, y: tau * 0.85, z: 0, ease: "power1.in" }, delay);
+  timeline.to(plane.position, { x: 0, y: -80, z: 0, ease: "power1.in" }, delay);
 }

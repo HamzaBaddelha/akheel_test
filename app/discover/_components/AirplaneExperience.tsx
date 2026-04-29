@@ -128,10 +128,15 @@ export default function AirplaneExperience() {
         const circlePhalange = circlePhalangeRef.current ? initStrokeDraw(circlePhalangeRef.current) : 0;
 
         gsap.set(plane.rotation, { y: tau * -0.25 });
+        gsap.set(plane.scale, {
+          x: profile.simplifiedMotion ? 0.62 : 1,
+          y: profile.simplifiedMotion ? 0.62 : 1,
+          z: profile.simplifiedMotion ? 0.62 : 1,
+        });
         gsap.set(plane.position, {
-          x: profile.simplifiedMotion ? 45 : 80,
-          y: profile.simplifiedMotion ? -22 : -32,
-          z: profile.simplifiedMotion ? -45 : -60,
+          x: profile.simplifiedMotion ? 24 : 80,
+          y: profile.simplifiedMotion ? -12 : -32,
+          z: profile.simplifiedMotion ? -120 : -60,
         });
         scene.requestRender();
 
@@ -287,6 +292,8 @@ export default function AirplaneExperience() {
         }
 
         ScrollTrigger.refresh();
+        // Fix iOS Safari viewport height miscalculation
+        setTimeout(() => ScrollTrigger.refresh(), 300);
       }, rootRef);
     };
 
@@ -304,7 +311,13 @@ export default function AirplaneExperience() {
   return (
     <div className={styles.experience} ref={rootRef}>
       <LoadingScreen loadingRef={loadingRef} />
-      {!mobileFallback && <div className={styles.canvasHost} ref={canvasHostRef} />}
+      {!mobileFallback && (
+        <div
+          className={styles.canvasHost}
+          ref={canvasHostRef}
+          style={{ overflow: "hidden", contain: "strict" }}
+        />
+      )}
 
       <div className={styles.content} ref={contentRef}>
         <div className={styles.trigger} />

@@ -34,7 +34,11 @@ export default function BlueprintSection({
     language === "ar" ? blueprintSectionsAr : language === "fr" ? blueprintSectionsFr : blueprintSections;
 
   return (
-    <div className={styles.blueprint} ref={blueprintRef as React.RefObject<HTMLDivElement>}>
+    <div
+      className={styles.blueprint}
+      ref={blueprintRef as React.RefObject<HTMLDivElement>}
+      style={{ overflow: "hidden", position: "relative" }}
+    >
       <svg className={styles.blueprintSvg} ref={blueprintSvgRef as React.RefObject<SVGSVGElement>} viewBox="0 0 100 100">
         <line
           className={styles.line}
