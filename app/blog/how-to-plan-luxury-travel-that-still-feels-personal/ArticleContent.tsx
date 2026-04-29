@@ -43,7 +43,7 @@ export default function ArticleContent() {
           </p>
           <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-card border border-accent/35">
             <Image
-              src="/assets/tanger.jpg"
+              src="/assets/baloon1.jpg"
               alt={t("blogArticlePersonal.meta.imageAlt")}
               fill
               priority

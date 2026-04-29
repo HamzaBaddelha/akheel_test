@@ -33,15 +33,15 @@ export const featuredPost: BlogPost = {
 
 export const latestStories: BlogPost[] = [
   {
-    slug: "curated-escapes-in-georgia",
-    title: "Curated Escapes in Georgia: Wine Valleys and Mountain Air",
+    slug: "jandouba",
+    title: "Tunis Jandouba",
     excerpt:
-      "A refined route through Kakheti estates, private tastings, and design-forward lodges framed by the Caucasus.",
+      "Breathe in cool mountain air, emerald forest calm, and winter snow in Ayn Darahim, a peaceful Tunisian escape with quietly luxurious charm.",
     category: "Travel Guides",
     date: "April 6, 2026",
     readTime: "6 min read",
-    image: "/assets/morroco.jpg",
-    imageAlt: "Mountain landscape with dramatic sky for a curated escape",
+    image: "/assets/Imlil_Valley.jpg",
+    imageAlt: "Ayn Darahim mountain landscape with cool weather and peaceful nature",
   },
   {
     slug: "desert-luxury-under-stars",
@@ -51,7 +51,7 @@ export const latestStories: BlogPost[] = [
     category: "Adventure",
     date: "March 30, 2026",
     readTime: "7 min read",
-    image: "/assets/desert.webp",
+    image: "/assets/Youssef Ibn Tachfine Dam 02 .jpg",
     imageAlt: "Desert dunes at sunset with warm cinematic tones",
   },
   {
@@ -62,7 +62,7 @@ export const latestStories: BlogPost[] = [
     category: "Food & Stay",
     date: "March 18, 2026",
     readTime: "5 min read",
-    image: "/assets/kasbah.webp",
+    image: "/assets/Tafraoute3.jpg",
     imageAlt: "Boutique kasbah-style accommodation with earthy textures",
   },
   {
@@ -84,7 +84,7 @@ export const latestStories: BlogPost[] = [
     category: "Travel Guides",
     date: "March 2, 2026",
     readTime: "6 min read",
-    image: "/assets/tanger.jpg",
+    image: "/assets/Imlil_Valley.jpg",
     imageAlt: "Elegant coastal destination with blue sea and cityscape",
   },
   {

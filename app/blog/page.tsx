@@ -49,12 +49,24 @@ export default function BlogPage() {
   const { t } = useI18n();
   const localizedLatestStories = latestStories.map((story) => ({
     ...story,
-    title: t(`blog.latestStories.${story.slug}.title`),
-    excerpt: t(`blog.latestStories.${story.slug}.excerpt`),
-    category: t(`blog.latestStories.${story.slug}.category`),
-    date: t(`blog.latestStories.${story.slug}.date`),
-    readTime: t(`blog.latestStories.${story.slug}.readTime`),
-    imageAlt: t(`blog.latestStories.${story.slug}.imageAlt`),
+    title: t(`blog.latestStories.${story.slug}.title`) === `blog.latestStories.${story.slug}.title`
+      ? story.title
+      : t(`blog.latestStories.${story.slug}.title`),
+    excerpt: t(`blog.latestStories.${story.slug}.excerpt`) === `blog.latestStories.${story.slug}.excerpt`
+      ? story.excerpt
+      : t(`blog.latestStories.${story.slug}.excerpt`),
+    category: t(`blog.latestStories.${story.slug}.category`) === `blog.latestStories.${story.slug}.category`
+      ? story.category
+      : t(`blog.latestStories.${story.slug}.category`),
+    date: t(`blog.latestStories.${story.slug}.date`) === `blog.latestStories.${story.slug}.date`
+      ? story.date
+      : t(`blog.latestStories.${story.slug}.date`),
+    readTime: t(`blog.latestStories.${story.slug}.readTime`) === `blog.latestStories.${story.slug}.readTime`
+      ? story.readTime
+      : t(`blog.latestStories.${story.slug}.readTime`),
+    imageAlt: t(`blog.latestStories.${story.slug}.imageAlt`) === `blog.latestStories.${story.slug}.imageAlt`
+      ? story.imageAlt
+      : t(`blog.latestStories.${story.slug}.imageAlt`),
   }));
 
   return (
