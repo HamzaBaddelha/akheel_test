@@ -25,19 +25,19 @@ export interface DestinationPanel {
 
 export const destinations: Destination[] = [
   {
-    id: "tunis",
-    nameKey: "data.destinations.tunis.name",
-    descriptionKey: "data.destinations.tunis.description",
-    image: "/assets/tunis_mahdia.jpg",
-    href: "/programs#tunisia-signature-journey",
-  },
-  {
     id: "morocco-tours",
     nameKey: "data.destinations.moroccoTours.name",
     descriptionKey: "data.destinations.moroccoTours.description",
     image:
       "https://images.unsplash.com/photo-1553603227-2358aabe821e?w=800&q=80",
     href: "/agadir",
+  },
+  {
+    id: "tunis",
+    nameKey: "data.destinations.tunis.name",
+    descriptionKey: "data.destinations.tunis.description",
+    image: "/assets/tunis_mahdia.jpg",
+    href: "/programs#tunisia-signature-journey",
   },
   {
     id: "saudi-arabia",

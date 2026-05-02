@@ -53,19 +53,25 @@ export default function Header({ fixedBgColor }: HeaderProps = {}) {
         : "text-primary-foreground/80 hover:text-secondary"
     }`;
 
-  const headerStyle = {
-    backgroundColor: fixedBgColor ?? (scrolled ? "rgba(44,34,22,0.95)" : "rgba(44,34,22,0)"),
-    transition: "background-color 240ms ease",
+  const navGlassStyle = {
+    backgroundColor: fixedBgColor
+      ? "rgba(44,34,22,0.72)"
+      : scrolled
+      ? "rgba(44,34,22,0.66)"
+      : "rgba(44,34,22,0.4)",
+    transition: "background-color 240ms ease, box-shadow 240ms ease",
+    backdropFilter: "blur(16px) saturate(145%)",
+    WebkitBackdropFilter: "blur(16px) saturate(145%)",
   };
 
   return (
-    <header
-      style={headerStyle}
-      className="fixed inset-x-0 top-0 z-50"
-    >
-      <Container>
+    <header className="fixed inset-x-0 top-0 z-50">
+      <Container className="pt-2 sm:pt-3">
         <nav
-          className="flex h-16 items-center justify-between sm:h-20"
+          style={navGlassStyle}
+          className={`flex h-16 items-center justify-between rounded-2xl border border-white/20 px-3 shadow-[0_10px_32px_rgba(16,10,7,0.25)] sm:h-20 sm:px-5 ${
+            scrolled || fixedBgColor ? "shadow-[0_14px_36px_rgba(16,10,7,0.3)]" : ""
+          }`}
           aria-label={t("header.aria.mainNavigation")}
         >
           <Link href="/" aria-label={t("header.aria.homeLink")} className="shrink-0">
@@ -140,7 +146,8 @@ export default function Header({ fixedBgColor }: HeaderProps = {}) {
       </Container>
 
       {mobileOpen && (
-        <div className="absolute inset-x-0 top-full border-t border-white/10 bg-primary/95 backdrop-blur-sm md:hidden">
+        <div className="absolute inset-x-0 top-full px-4 pt-2 sm:px-6 md:hidden lg:px-8">
+          <div className="mx-auto w-full max-w-7xl rounded-2xl border border-white/20 bg-primary/70 shadow-[0_16px_38px_rgba(16,10,7,0.28)] backdrop-blur-xl">
           <ul className="flex max-h-[calc(100vh-4rem)] flex-col gap-1 overflow-y-auto p-5 sm:max-h-[calc(100vh-5rem)]">
             <li className="mb-2 flex items-center justify-center gap-2">
               {LANGS.map((lang) => (
@@ -182,6 +189,7 @@ export default function Header({ fixedBgColor }: HeaderProps = {}) {
               </Link>
             </li>
           </ul>
+          </div>
         </div>
       )}
     </header>
