@@ -718,7 +718,7 @@
         "contact": "Informations de Contact",
         "details": "Details du Voyage",
         "budget": "Budget",
-        "tripType": "Type de Voyage",
+        "tripType": "Choisissez un ou plusieurs styles de voyage",
         "hotelLevel": "Categorie d'Hotel",
         "services": "Services Souhaites",
         "notes": "Notes Complementaires"
@@ -860,5 +860,52 @@
     "ctaSubtitle": "Confiez-nous la creation d'un itineraire sur-mesure, pense pour votre style de voyage.",
     "ctaButton": "Nous Contacter",
     "tourPageAria": "Tours d'Agadir"
+  },
+  "blogArticleDesertLuxury": {
+    "meta": {
+      "category": "Aventure",
+      "title": "Luxe Du Desert Sous Les Etoiles: Au-Dela Des Dunes",
+      "subtitle": "Un chapitre desertique cinematographique ou nuits aux lanternes, balades a dos de chameau a l aube et confort sur mesure transforment le silence en luxe absolu.",
+      "author": "Par l equipe editoriale Atlas",
+      "date": "30 Mars 2026",
+      "readTime": "7 min de lecture",
+      "imageAlt": "Camp desertique haut de gamme au crepuscule sous un ciel ouvert"
+    },
+    "intro": "Le desert offre une forme de calme introuvable ailleurs. A la tombee du jour, les lanternes s allument dans les camps prives, les tissus se soulevent doucement dans la brise, et l horizon devient un theatre d etoiles. Ici, le luxe n est jamais demonstratif. Il se ressent dans l espace, la serenite et la justesse de chaque detail.",
+    "sections": {
+      "s1": {
+        "title": "Pourquoi Le Desert Devient Plus Luxueux A Rythme Lent",
+        "body": "Dans le desert, le temps se dilate naturellement. Sans agitation ni foule, chaque instant prend de la valeur. Le voyage lent permet de savourer un the au coucher du soleil, d allonger les conversations et d habiter pleinement l experience."
+      },
+      "s2": {
+        "title": "Camps Aux Lanternes Et Soirees Desertiques Raffinees",
+        "body": "Les plus belles nuits desertiques allient authenticite et sophistication. Camps selectionnes, diners elegants sous le ciel, salons intimistes et service discret composent une ambiance chaleureuse, cinematographique et memorable."
+      },
+      "s3": {
+        "title": "Balades A L Aube Et Beaute Du Silence",
+        "body": "Aux premieres lumieres, le desert revele sa grandeur calme. Une sortie a dos de chameau sur les dunes intactes est moins une activite qu une immersion: couleurs douces, ombres longues, horizon infini et sensation de recentrage profond."
+      },
+      "s4": {
+        "title": "Confort, Intimite Et Service Attentionne En Milieu Isole",
+        "body": "Le vrai luxe desertique repose sur la fluidite. Transferts prives, implantation soignee du camp, literie premium et accompagnement local de qualite transforment l isolement en confort naturel et exclusif."
+      },
+      "s5": {
+        "title": "Comment Garder Un Voyage Desertique Exclusif Et Non Touristique",
+        "body": "L exclusivite se construit par la curation. Choisissez des periodes plus calmes, des guides prives et un programme ajuste a votre rythme. Moins d etapes, plus de profondeur: c est ainsi que nait une experience rare."
+      },
+      "s6": {
+        "title": "Conclusion",
+        "body": "Le desert devient inoubliable quand l elegance rencontre la quietude. Pour les voyageurs en quete d atmosphere, d intimite et de rythme maitrise, les dunes offrent l une des plus belles expressions du voyage premium."
+      }
+    },
+    "quote": "Dans le desert, le luxe n est pas ce qui vous entoure, mais la facon dont le monde se tait pour vous.",
+    "cta": {
+      "tag": "Concevez Votre Evasion",
+      "title": "Pret A Decouvrir Le Desert Dans Sa Version La Plus Raffinee?",
+      "subtitle": "Confiez a Akheel la creation d un voyage desertique sur mesure entre camp prive, rythme elegant et confort d exception sous un ciel infini.",
+      "primary": "Planifier Votre Voyage",
+      "secondary": "Demander Un Voyage Sur Mesure",
+      "tertiary": "Commencer Votre Evasion Desertique"
+    }
   }
 }

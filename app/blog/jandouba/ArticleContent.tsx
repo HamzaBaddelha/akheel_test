@@ -95,8 +95,8 @@ export default function ArticleContent() {
           <div className="grid gap-5 lg:grid-cols-2">
             <div className="relative min-h-[260px] overflow-hidden rounded-card border border-accent/30 sm:min-h-[340px]">
               <Image
-                src="/assets/morroco.jpg"
-                alt="Mountain skyline with cool-weather atmosphere"
+                src="/assets/Ayn_Darahim_snow.jpg"
+                alt="Ayn Darahim village covered in winter snow"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -104,8 +104,8 @@ export default function ArticleContent() {
             </div>
             <div className="relative min-h-[260px] overflow-hidden rounded-card border border-accent/30 sm:min-h-[340px]">
               <Image
-                src="/assets/baloon.jpg"
-                alt="Elegant mountain panorama and calm sky at sunset"
+                src="/assets/Douz.jpg"
+                alt="Tunisian heritage architecture under a bright sky"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

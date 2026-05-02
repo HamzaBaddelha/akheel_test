@@ -20,7 +20,6 @@ export type MultiSelectField = "tripTypes" | "requiredServices";
 export type ProcessStep = {
   titleKey: string;
   descriptionKey: string;
-  image: string;
 };
 
 export type DestinationHighlight = {

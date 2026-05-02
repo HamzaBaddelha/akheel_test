@@ -11,17 +11,14 @@ export const processSteps: ProcessStep[] = [
   {
     titleKey: "planTrip.steps.items.0.title",
     descriptionKey: "planTrip.steps.items.0.description",
-    image: "/assets/baground.jpg",
   },
   {
     titleKey: "planTrip.steps.items.1.title",
     descriptionKey: "planTrip.steps.items.1.description",
-    image: "/assets/contactyou.png",
   },
   {
     titleKey: "planTrip.steps.items.2.title",
     descriptionKey: "planTrip.steps.items.2.description",
-    image: "/assets/booking.png",
   },
 ];
 

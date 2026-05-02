@@ -25,13 +25,13 @@ export default function PlanTripForm() {
 
   const minTravelDate = useMemo(() => getTodayDateISO(), []);
   const sectionShellClass =
-    "rounded-3xl border border-white/60 bg-[#e8edf5] p-6 shadow-[14px_14px_32px_rgba(145,157,178,0.35),-14px_-14px_30px_rgba(255,255,255,0.9)] sm:p-8 lg:p-10";
+    "rounded-3xl border border-white/40 bg-white/20 p-6 backdrop-blur-xl shadow-[0_18px_45px_rgba(26,24,22,0.18)] sm:p-8 lg:p-10";
   const fieldsetClass =
-    "space-y-4 rounded-2xl border border-white/65 bg-[#e8edf5] p-5 shadow-[10px_10px_22px_rgba(145,157,178,0.28),-8px_-8px_18px_rgba(255,255,255,0.82)] sm:p-6";
+    "space-y-4 rounded-2xl border border-white/45 bg-white/25 p-5 backdrop-blur-md shadow-[0_12px_28px_rgba(26,24,22,0.12)] sm:p-6";
   const controlClass =
-    "w-full rounded-xl border border-transparent bg-[#e8edf5] px-4 py-3 text-sm text-foreground/90 outline-none shadow-[inset_5px_5px_10px_rgba(145,157,178,0.25),inset_-5px_-5px_10px_rgba(255,255,255,0.9)] transition focus:shadow-[inset_2px_2px_5px_rgba(145,157,178,0.34),inset_-2px_-2px_6px_rgba(255,255,255,0.95)]";
+    "w-full rounded-xl border border-white/50 bg-white/35 px-4 py-3 text-sm text-foreground/90 outline-none backdrop-blur-sm shadow-[inset_0_1px_0_rgba(255,255,255,0.45)] transition focus:border-secondary/45 focus:bg-white/45 focus:ring-2 focus:ring-secondary/20";
   const optionCardClass =
-    "flex cursor-pointer items-center gap-2 rounded-xl border border-white/60 bg-[#e8edf5] px-3 py-2 text-sm text-foreground/85 shadow-[6px_6px_12px_rgba(145,157,178,0.2),-6px_-6px_12px_rgba(255,255,255,0.82)]";
+    "flex cursor-pointer items-center gap-2 rounded-xl border border-white/45 bg-white/30 px-3 py-2 text-sm text-foreground/85 backdrop-blur-sm shadow-[0_8px_18px_rgba(26,24,22,0.1)] transition hover:bg-white/40";
 
   const updateField = <K extends keyof TripFormState>(field: K, value: TripFormState[K]) => {
     setFormState((prev) => ({ ...prev, [field]: value }));
@@ -316,7 +316,7 @@ export default function PlanTripForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="inline-flex items-center justify-center rounded-full border border-white/70 bg-[#e8edf5] px-7 py-3.5 text-sm font-semibold text-primary shadow-[7px_7px_16px_rgba(145,157,178,0.3),-7px_-7px_14px_rgba(255,255,255,0.9)] transition hover:shadow-[4px_4px_10px_rgba(145,157,178,0.28),-4px_-4px_10px_rgba(255,255,255,0.88)] disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
+              className="inline-flex items-center justify-center rounded-full border border-white/55 bg-white/35 px-7 py-3.5 text-sm font-semibold text-primary backdrop-blur-md shadow-[0_12px_25px_rgba(26,24,22,0.14)] transition hover:bg-white/50 disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
             >
               {isSubmitting ? t("planTrip.form.cta.submitting") : t("planTrip.form.cta.submit")}
             </button>
@@ -324,7 +324,7 @@ export default function PlanTripForm() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-white/70 bg-[#e8edf5] px-7 py-3.5 text-sm font-semibold text-primary shadow-[7px_7px_16px_rgba(145,157,178,0.3),-7px_-7px_14px_rgba(255,255,255,0.9)] transition hover:shadow-[4px_4px_10px_rgba(145,157,178,0.28),-4px_-4px_10px_rgba(255,255,255,0.88)] sm:text-base"
+              className="inline-flex items-center justify-center rounded-full border border-white/55 bg-white/35 px-7 py-3.5 text-sm font-semibold text-primary backdrop-blur-md shadow-[0_12px_25px_rgba(26,24,22,0.14)] transition hover:bg-white/50 sm:text-base"
             >
               {t("planTrip.form.cta.whatsApp")}
             </a>

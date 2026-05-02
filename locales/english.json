@@ -612,7 +612,7 @@
         "contact": "Contact Information",
         "details": "Trip Details",
         "budget": "Budget",
-        "tripType": "Trip Type",
+        "tripType": "Choose One or More Travel Styles",
         "hotelLevel": "Hotel Level",
         "services": "Required Services",
         "notes": "Additional Notes"
@@ -754,5 +754,52 @@
     "ctaSubtitle": "Let us craft a bespoke itinerary tailored to your travel style.",
     "ctaButton": "Get in Touch",
     "tourPageAria": "Agadir tours"
+  },
+  "blogArticleDesertLuxury": {
+    "meta": {
+      "category": "Adventure",
+      "title": "Desert Luxury Under the Stars: Beyond the Dunes",
+      "subtitle": "A cinematic desert chapter where lantern-lit nights, dawn camel rides, and tailored comfort turn silence into the ultimate luxury.",
+      "author": "By Atlas Editorial Team",
+      "date": "March 30, 2026",
+      "readTime": "7 min read",
+      "imageAlt": "Luxury desert camp at dusk beneath an expansive sky"
+    },
+    "intro": "There is a rare kind of stillness that only the desert can offer. As twilight settles, lanterns begin to glow across private camps, soft fabrics catch the evening breeze, and the horizon opens into an endless canopy of stars. Here, luxury is not loud. It is felt in the calm, in the space, and in every thoughtfully curated detail.",
+    "sections": {
+      "s1": {
+        "title": "Why The Desert Feels More Luxurious At A Slower Pace",
+        "body": "In the desert, time naturally stretches. Without noise, crowds, or urgency, each moment becomes clearer and more valuable. Slow travel here means unhurried tea at sunset, deeper conversation by the fire, and a rhythm designed around presence rather than schedules."
+      },
+      "s2": {
+        "title": "Lantern-Lit Camps And Elevated Desert Evenings",
+        "body": "The most memorable desert nights balance authenticity with refined comfort. Handpicked camps now offer elegant dining under open skies, intimate lounge corners, and discreet service that feels personal. The mood is cinematic, warm, and deeply atmospheric."
+      },
+      "s3": {
+        "title": "Dawn Camel Rides And The Beauty Of Silence",
+        "body": "At first light, the desert reveals its quiet grandeur. A sunrise camel ride across untouched dunes is less about adventure and more about perspective: soft colors, long shadows, and a sense of space that resets the mind. Few experiences feel this immersive and pure."
+      },
+      "s4": {
+        "title": "Comfort, Privacy, And Thoughtful Service In Remote Settings",
+        "body": "True desert luxury is defined by seamless care. Private transfers, curated camp placement, premium bedding, and attentive local hosts transform remote terrain into effortless comfort. The result is a retreat that feels both exclusive and deeply human."
+      },
+      "s5": {
+        "title": "How To Keep A Desert Journey Exclusive, Not Touristy",
+        "body": "Exclusivity comes from curation. Choose quieter windows, private guides, and experiences shaped around your pace. Prioritize depth over checklist stops. A single well-designed evening under the stars can be more meaningful than a crowded itinerary."
+      },
+      "s6": {
+        "title": "Final Takeaway",
+        "body": "Desert travel becomes unforgettable when elegance meets stillness. If you value atmosphere, privacy, and intentional pacing, the dunes offer one of the most sophisticated escapes in modern luxury travel."
+      }
+    },
+    "quote": "In the desert, luxury is not what surrounds you, but how completely the world quiets for you.",
+    "cta": {
+      "tag": "Design Your Escape",
+      "title": "Ready To Experience The Desert In Its Most Refined Form?",
+      "subtitle": "Let Akheel craft a bespoke desert journey with private camp moments, elegant pacing, and premium comfort under open skies.",
+      "primary": "Plan Your Trip",
+      "secondary": "Request A Custom Journey",
+      "tertiary": "Start Your Desert Escape"
+    }
   }
 }

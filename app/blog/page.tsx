@@ -8,10 +8,10 @@ import Link from "next/link";
 import { useI18n } from "@/components/i18n/I18nProvider";
 import { latestStories, type BlogPost } from "@/app/blog/data";
 
-function BlogCard({ post }: { post: BlogPost }) {
+function BlogCard({ post, href }: { post: BlogPost; href: string }) {
   return (
     <article className="group h-full overflow-hidden rounded-card border border-accent/30 bg-card shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
-      <Link href={`/blog/${post.slug}`} className="block">
+      <Link href={href} className="block">
         <div className="relative aspect-[4/3] overflow-hidden">
           <Image
             src={post.image}
@@ -28,7 +28,7 @@ function BlogCard({ post }: { post: BlogPost }) {
         </p>
         <h3 className="mt-3 text-xl font-semibold leading-snug text-primary">
           <Link
-            href={`/blog/${post.slug}`}
+            href={href}
             className="transition hover:text-primary/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
           >
             {post.title}
@@ -47,6 +47,11 @@ function BlogCard({ post }: { post: BlogPost }) {
 
 export default function BlogPage() {
   const { t } = useI18n();
+  const resolveStoryHref = (slug: string) =>
+    slug === "desert-luxury-under-stars"
+      ? "/blog/desert-luxury-under-the-stars-beyond-the-dunes"
+      : `/blog/${slug}`;
+
   const localizedLatestStories = latestStories.map((story) => ({
     ...story,
     title: t(`blog.latestStories.${story.slug}.title`) === `blog.latestStories.${story.slug}.title`
@@ -124,7 +129,7 @@ export default function BlogPage() {
             </div>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
               {localizedLatestStories.map((story) => (
-                <BlogCard key={story.slug} post={story} />
+                <BlogCard key={story.slug} post={story} href={resolveStoryHref(story.slug)} />
               ))}
             </div>
           </section>
