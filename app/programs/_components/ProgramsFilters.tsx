@@ -20,8 +20,8 @@ export default function ProgramsFilters({
     Adventure: t("programsPage.categories.adventure"),
     Culture: t("programsPage.categories.culture"),
     Wellness: t("programsPage.categories.wellness"),
-    "City Tours": t("programsPage.categories.cityTours"),
-    Beach: t("programsPage.categories.beach"),
+    Coastal: t("programsPage.categories.coastal"),
+    "Multi-Day": t("programsPage.categories.multiDay"),
   };
 
   return (

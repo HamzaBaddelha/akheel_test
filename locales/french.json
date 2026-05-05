@@ -20,8 +20,9 @@
   "programsPage": {
     "hero": {
       "tag": "Programmes",
-      "title": "Explorez des voyages d'exception au-dela du tourisme classique",
-      "subtitle": "Decouvrez des parcours elegants, concus avec soin entre cotes, villes, deserts et montagnes.",
+      "title": "Programmes du Maroc",
+      "subtitle": "De l'ocean au desert, decouvrez le vrai Maroc.",
+      "description": "Des experiences a la journee et des voyages multi-jours a travers les cotes, les montagnes, le desert, les villes et l'ame culturelle du Maroc.",
       "exploreCta": "Explorer les programmes",
       "planCta": "Planifier votre voyage",
       "slides": {
@@ -45,8 +46,12 @@
       "adventure": "Aventure",
       "culture": "Culture",
       "wellness": "Bien-etre",
-      "cityTours": "Visites de ville",
-      "beach": "Plage"
+      "coastal": "Cote",
+      "multiDay": "Multi-jours"
+    },
+    "sections": {
+      "dayExperiences": "Experiences Signature a la Journee",
+      "multiDayJourneys": "Voyages Maroc Multi-Jours"
     },
     "grid": {
       "aria": "Tous les programmes"

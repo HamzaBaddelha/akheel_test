@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useI18n } from "@/components/i18n/I18nProvider";
 import SlideAnimation from "@/components/ui/slide_animation";
 import { PROGRAMS_FALLBACK_IMAGE } from "@/lib/programs/constants";
+import { programDetailsHref } from "@/lib/programs/helpers";
 import type { Program } from "@/lib/programs/types";
 
 type Props = { program: Program };
@@ -20,12 +21,6 @@ export default function FeaturedProgram({ program }: Props) {
     {
       label: t("programsPage.common.durationLabel"),
       value: program.duration || t("programsPage.common.flexible"),
-    },
-    {
-      label: t("programsPage.common.priceLabel"),
-      value: program.priceFrom
-        ? t("programsPage.common.fromPrice", { price: program.priceFrom })
-        : t("programsPage.common.tailoredPricing"),
     },
   ];
 
@@ -81,7 +76,7 @@ export default function FeaturedProgram({ program }: Props) {
 
             <div className="mt-6 flex flex-wrap gap-2.5 sm:mt-8 sm:gap-3">
               <Link
-                href="/agadir"
+                href={programDetailsHref(program)}
                 className="inline-flex rounded-full bg-[#2c2216] px-4 py-2.5 text-sm font-semibold text-[#e1e0d4] transition hover:bg-[#403122] sm:px-6 sm:py-3"
               >
                 {t("programsPage.common.viewProgram")}

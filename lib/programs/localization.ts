@@ -19,8 +19,8 @@ function localizeCategory(category: string | undefined, t: TranslateFn) {
     Adventure: "programsPage.categories.adventure",
     Culture: "programsPage.categories.culture",
     Wellness: "programsPage.categories.wellness",
-    "City Tours": "programsPage.categories.cityTours",
-    Beach: "programsPage.categories.beach",
+    Coastal: "programsPage.categories.coastal",
+    "Multi-Day": "programsPage.categories.multiDay",
   };
   const key = categoryKeyMap[category];
   return key ? fallbackT(t, key, category) : category;

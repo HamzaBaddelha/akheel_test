@@ -11,9 +11,12 @@ import {
   PROGRAMS_PRIMARY_COLOR,
 } from "@/lib/programs/constants";
 import { getProgramBySlug, getPrograms } from "@/lib/programs/getPrograms";
-import { formatPrice, programPlanHref } from "@/lib/programs/helpers";
+import { programPlanHref } from "@/lib/programs/helpers";
 
 type Props = { params: Promise<{ slug: string }> };
+
+export const dynamic = "force-static";
+export const revalidate = false;
 
 export async function generateStaticParams() {
   const programs = await getPrograms();
@@ -73,10 +76,6 @@ export default async function ProgramDetailsPage({ params }: Props) {
                   <p>
                     <span className="font-semibold text-[#2c2216]">Duration:</span>{" "}
                     {program.duration || "Flexible"}
-                  </p>
-                  <p>
-                    <span className="font-semibold text-[#2c2216]">Price:</span>{" "}
-                    {formatPrice(program.priceFrom)}
                   </p>
                 </div>
                 <div className="mt-7 flex flex-wrap gap-3">

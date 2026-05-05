@@ -13,6 +13,9 @@ import {
 } from "@/lib/programs/constants";
 import { getPrograms } from "@/lib/programs/getPrograms";
 
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export default async function ProgramsPage() {
   const programs = await getPrograms();
 

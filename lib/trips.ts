@@ -89,7 +89,7 @@ export const testimonials: Testimonial[] = [
 export const destinationPanels: DestinationPanel[] = [
   {
     id: "marrakech",
-    image: "/assets/marrakech.jpg",
+    image: "/assets/optimized-programs-hero.webp",
     titleKey: "data.panels.marrakech.title",
     subtitleKey: "data.panels.marrakech.subtitle",
     ctaLabelKey: "data.panels.cta",
@@ -105,7 +105,7 @@ export const destinationPanels: DestinationPanel[] = [
   },
   {
     id: "desert",
-    image: "/assets/desert.webp",
+    image: "/assets/jeep_safari2.jpg",
     titleKey: "data.panels.desert.title",
     subtitleKey: "data.panels.desert.subtitle",
     ctaLabelKey: "data.panels.cta",
@@ -113,7 +113,7 @@ export const destinationPanels: DestinationPanel[] = [
   },
   {
     id: "tanger",
-    image: "/assets/tanger.jpg",
+    image: "/assets/tardaoui4.png",
     titleKey: "data.panels.tanger.title",
     subtitleKey: "data.panels.tanger.subtitle",
     ctaLabelKey: "data.panels.cta",
@@ -121,7 +121,7 @@ export const destinationPanels: DestinationPanel[] = [
   },
   {
     id: "kabah",
-    image: "/assets/kasbah.webp",
+    image: "/assets/Tafraoute3.jpg",
     titleKey: "data.panels.kabah.title",
     subtitleKey: "data.panels.kabah.subtitle",
     ctaLabelKey: "data.panels.cta",

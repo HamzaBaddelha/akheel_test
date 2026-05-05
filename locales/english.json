@@ -20,8 +20,9 @@
   "programsPage": {
     "hero": {
       "tag": "Programs",
-      "title": "Explore Exceptional Journeys Beyond Ordinary Travel",
-      "subtitle": "Discover elegant, handcrafted journeys across coastlines, cities, deserts, and mountains.",
+      "title": "Morocco Programs",
+      "subtitle": "From the ocean to the desert, discover the real Morocco.",
+      "description": "Curated day experiences and multi-day journeys across Morocco's coast, mountains, desert, cities, and cultural heart.",
       "exploreCta": "Explore Programs",
       "planCta": "Plan Your Journey",
       "slides": {
@@ -45,8 +46,12 @@
       "adventure": "Adventure",
       "culture": "Culture",
       "wellness": "Wellness",
-      "cityTours": "City Tours",
-      "beach": "Beach"
+      "coastal": "Coastal",
+      "multiDay": "Multi-Day"
+    },
+    "sections": {
+      "dayExperiences": "Signature Day Experiences",
+      "multiDayJourneys": "Multi-Day Morocco Journeys"
     },
     "grid": {
       "aria": "All programs"

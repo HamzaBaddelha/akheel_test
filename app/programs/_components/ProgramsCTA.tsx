@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useI18n } from "@/components/i18n/I18nProvider";
-import SlideAnimation from "@/components/ui/slide_animation";
 
 export default function ProgramsCTA() {
   const { t } = useI18n();
@@ -13,11 +12,9 @@ export default function ProgramsCTA() {
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#b0b8c9]">
           {t("programsPage.cta.tag")}
         </p>
-        <SlideAnimation from="left">
-          <h2 className="mt-3 text-2xl font-semibold sm:mt-4 sm:text-4xl">
-            {t("programsPage.cta.title")}
-          </h2>
-        </SlideAnimation>
+        <h2 className="mt-3 text-2xl font-semibold sm:mt-4 sm:text-4xl">
+          {t("programsPage.cta.title")}
+        </h2>
         <p className="mt-4 text-sm leading-relaxed text-[#e1e0d4]/80 sm:text-base">
           {t("programsPage.cta.description")}
         </p>
