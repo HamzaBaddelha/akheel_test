@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
@@ -39,22 +38,6 @@ export default function HomePage() {
         <Testimonials />
         <ContactUs />
       </main>
-      <a
-        href="https://wa.me/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
-        className="fixed bottom-5 right-5 z-[80] inline-flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-lg ring-1 ring-black/10 transition-transform hover:scale-105"
-      >
-        <Image
-          src="/assets/whatsapp.png"
-          alt="WhatsApp"
-          width={36}
-          height={36}
-          className="h-9 w-9 object-contain"
-          priority
-        />
-      </a>
       <Footer />
     </>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { I18nProvider } from "@/components/i18n/I18nProvider";
+import ChatLauncher from "@/components/chat/ChatLauncher";
 
 export const metadata: Metadata = {
   title: "Akheel Travel — Discover Saudi & Morocco",
@@ -22,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" className="font-sans" suppressHydrationWarning>
       <body>
-        <I18nProvider>{children}</I18nProvider>
+        <I18nProvider>
+          {children}
+          <ChatLauncher />
+        </I18nProvider>
       </body>
     </html>
   );

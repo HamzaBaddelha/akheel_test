@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import { PROGRAMS_FALLBACK_IMAGE } from "@/lib/programs/constants";
-import { programDetailsHref } from "@/lib/programs/helpers";
 import type { Program } from "@/lib/programs/types";
 
 type Props = { program: Program };
@@ -31,13 +29,6 @@ export default function RailProgramCard({ program }: Props) {
               {program.shortDescription}
             </p>
           )}
-          <Link
-            href={programDetailsHref(program)}
-            className="mt-4 inline-flex text-sm font-semibold text-[#e1e0d4] underline decoration-white/50 underline-offset-4 transition hover:text-white"
-            aria-label={`View ${program.title || "program"}`}
-          >
-            View Program
-          </Link>
         </div>
       </div>
     </article>

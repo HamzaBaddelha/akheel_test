@@ -7,7 +7,6 @@ import PlanTripHero from "./_components/PlanTripHero";
 import PlanTripSteps from "./_components/PlanTripSteps";
 import PlanTripTrustSections from "./_components/PlanTripTrustSections";
 import PlanTripVideoText from "./_components/PlanTripVideoText";
-import StickyWhatsAppButton from "./_components/StickyWhatsAppButton";
 
 export default function PlanYourTripPage() {
   return (
@@ -23,7 +22,6 @@ export default function PlanYourTripPage() {
           <PlanTripTrustSections />
         </Container>
       </main>
-      <StickyWhatsAppButton />
       <Footer />
     </>
   );

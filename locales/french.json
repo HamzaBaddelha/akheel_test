@@ -912,5 +912,169 @@
       "secondary": "Demander Un Voyage Sur Mesure",
       "tertiary": "Commencer Votre Evasion Desertique"
     }
+  },
+  "faq": {
+    "hero": {
+      "tag": "FAQ",
+      "title": "Vos Questions Voyage Premium, En Toute Clarte",
+      "subtitle": "Retrouvez des reponses claires sur la planification, les itineraires sur mesure, la reservation, les destinations et l accompagnement."
+    },
+    "sections": {
+      "planning": {
+        "title": "Planification et Voyages Sur Mesure",
+        "items": {
+          "q1": {
+            "question": "Pouvez-vous creer un voyage selon mon budget ?",
+            "answer": "Oui. Nous construisons l itineraire autour de votre budget, puis nous optimisons hotels, experiences et logistique pour offrir le meilleur niveau de confort."
+          },
+          "q2": {
+            "question": "Puis-je personnaliser hotels, activites et rythme du voyage ?",
+            "answer": "Absolument. Vous choisissez le niveau d hotel, le style d experiences, l intensite des visites et les temps libres. Rien n est impose."
+          },
+          "q3": {
+            "question": "Que faire si je ne sais pas quelle destination choisir ?",
+            "answer": "C est frequent. Partagez votre style de voyage, votre saison et votre budget, et nous vous orientons vers le meilleur choix: Maroc, Tunisie, Arabie saoudite, ou combinaison."
+          },
+          "q4": {
+            "question": "Comment fonctionne le processus, et sous quel delai repondez-vous ?",
+            "answer": "Apres reception de votre demande, notre equipe analyse vos besoins et vous contacte generalement sous 24 heures avec une premiere orientation personnalisee."
+          }
+        }
+      },
+      "destinations": {
+        "title": "Destinations Que Nous Couvrons",
+        "items": {
+          "q1": {
+            "question": "Proposez-vous uniquement le Maroc ?",
+            "answer": "Le Maroc est une destination majeure pour nous, mais nous proposons aussi des voyages sur mesure en Tunisie et en Arabie saoudite, ainsi que d autres options selon votre projet."
+          },
+          "q2": {
+            "question": "Proposez-vous des voyages sur mesure en Tunisie ?",
+            "answer": "Oui. Nous pouvons combiner sejours cotiers, patrimoine culturel et experiences desertiques dans un meme itineraire fluide et premium."
+          },
+          "q3": {
+            "question": "Organisez-vous des voyages sur mesure en Arabie saoudite, notamment Riyad et Djeddah ?",
+            "answer": "Oui. Nous concevons des parcours personnalises en Arabie saoudite avec un focus ville, culture, gastronomie et lifestyle, notamment a Riyad et Djeddah."
+          },
+          "q4": {
+            "question": "Puis-je combiner plusieurs lieux dans un seul voyage ?",
+            "answer": "Oui, selon vos dates et votre rythme. Nous pouvons combiner villes, desert, montagne et bord de mer dans un plan coherent et elegant."
+          }
+        }
+      },
+      "morocco": {
+        "title": "Experiences Au Maroc",
+        "items": {
+          "q1": {
+            "question": "Proposez-vous des voyages personnalises au Maroc ?",
+            "answer": "Oui. Nous concevons des escapades courtes comme des circuits multi-jours selon votre style: culture, detente, aventure, ou melange equilibre."
+          },
+          "q2": {
+            "question": "Puis-je combiner Agadir, Marrakech, l Atlas et le Sahara ?",
+            "answer": "Oui. C est un itineraire tres demande. Nous l organisons avec un rythme realiste, des transferts confortables et une experience premium de bout en bout."
+          },
+          "q3": {
+            "question": "Proposez-vous des excursions a la journee depuis Agadir ?",
+            "answer": "Oui. Parmi les plus sollicitees: Paradise Valley et Atlas, Jeep Safari, Tafraoute et Anti-Atlas, Taroudant et Tiout, et Essaouira en aller-retour."
+          },
+          "q4": {
+            "question": "Pouvez-vous inclure Jeep Safari, Quad, Surf, Hammam et un circuit long ?",
+            "answer": "Absolument. Nous pouvons combiner ces experiences avec des itineraires plus larges incluant Marrakech, Fes, Chefchaouen, Tanger, Rabat, Casablanca et le Sahara."
+          }
+        }
+      },
+      "services": {
+        "title": "Hotels, Services et Inclusions",
+        "items": {
+          "q1": {
+            "question": "Quels services peuvent etre inclus dans un voyage sur mesure ?",
+            "answer": "Nous pouvons inclure vols, hotels, accueil aeroport, transferts prives, chauffeur, visites guidees, activites et planification complete jour par jour."
+          },
+          "q2": {
+            "question": "Pouvez-vous organiser les transferts aeroport et le transport prive ?",
+            "answer": "Oui. Nous gerons les accueils aeroport, les transferts prives et les trajets inter-villes pour une experience fluide et sans stress."
+          },
+          "q3": {
+            "question": "Proposez-vous plusieurs niveaux d hotels ?",
+            "answer": "Oui. Nous pouvons planifier en 4 etoiles, 5 etoiles et luxe, avec options boutique et adresses premium selon vos preferences."
+          },
+          "q4": {
+            "question": "Puis-je demander des guides locaux et des visites privees ?",
+            "answer": "Bien sur. Nous organisons des guides certifies, des visites privees et des experiences culturelles soigneusement selectionnees."
+          }
+        }
+      },
+      "budget": {
+        "title": "Budget et Reservation",
+        "items": {
+          "q1": {
+            "question": "Comment sont calcules les prix d un voyage sur mesure ?",
+            "answer": "Le tarif depend des destinations, des dates, du niveau d hotel, du transport, des experiences incluses et du nombre de voyageurs. Tout est detaille avant validation."
+          },
+          "q2": {
+            "question": "Pouvez-vous proposer plusieurs options selon le budget ?",
+            "answer": "Oui. Nous pouvons presenter des versions confort et premium pour vous aider a choisir le meilleur equilibre entre budget et experience."
+          },
+          "q3": {
+            "question": "Quand faut-il reserver ?",
+            "answer": "Nous recommandons de reserver 3 a 6 semaines a l avance pour les meilleures disponibilites. Les periodes de forte demande se planifient idealement plus tot."
+          },
+          "q4": {
+            "question": "Que se passe-t-il apres ma demande, et y a-t-il un acompte ?",
+            "answer": "Apres validation de l itineraire, nous confirmons les disponibilites et partageons les etapes de reservation. L acompte depend de la destination et des prestataires, et reste toujours clarifie en amont."
+          }
+        }
+      },
+      "travelStyle": {
+        "title": "Familles, Couples et Styles de Voyage",
+        "items": {
+          "q1": {
+            "question": "Organisez-vous des voyages adaptes aux familles ?",
+            "answer": "Oui. Nous construisons des programmes familiaux avec bon rythme, activites adaptees et logistique simple pour voyager confortablement."
+          },
+          "q2": {
+            "question": "Pouvez-vous planifier un voyage lune de miel ?",
+            "answer": "Oui. Nous concevons des voyages couples et honeymoon avec experiences privees, hotels elegants et rythme romantique."
+          },
+          "q3": {
+            "question": "Prenez-vous en charge les demandes women-only ou tres privees ?",
+            "answer": "Oui. Nous adaptons l organisation aux attentes de confidentialite, de confort et de style personnel de chaque voyageur."
+          },
+          "q4": {
+            "question": "Peut-on combiner detente et aventure dans un meme voyage ?",
+            "answer": "Absolument. Nous melangeons culture, nature, bien-etre et activites aventure selon votre energie et vos envies."
+          }
+        }
+      },
+      "support": {
+        "title": "Support et Communication",
+        "items": {
+          "q1": {
+            "question": "Puis-je vous contacter directement sur WhatsApp ?",
+            "answer": "Oui. WhatsApp est ideal pour poser des questions rapides, suivre l avancement et rester en lien durant la planification."
+          },
+          "q2": {
+            "question": "Sous combien de temps votre equipe me contacte-t-elle ?",
+            "answer": "Dans la plupart des cas, nous revenons vers vous sous 24 heures avec une reponse claire et les prochaines etapes."
+          },
+          "q3": {
+            "question": "Assurez-vous un accompagnement avant et pendant le voyage ?",
+            "answer": "Oui. Nous restons disponibles avant le depart et pendant votre sejour pour ajustements, confirmations et coordination terrain."
+          },
+          "q4": {
+            "question": "Comment continuer apres notre echange initial ?",
+            "answer": "Une fois la direction validee, nous finalisons l itineraire, confirmons les services et vous guidons pas a pas jusqu a la reservation."
+          }
+        }
+      }
+    },
+    "cta": {
+      "tag": "Planifiez Votre Voyage",
+      "title": "Pret A Voyager Avec Un Itineraire Pense Pour Vous ?",
+      "subtitle": "Envoyez votre demande et laissez notre equipe concevoir un parcours premium au Maroc, en Tunisie, en Arabie saoudite, ou sur plusieurs destinations.",
+      "primaryButton": "Commencer La Planification",
+      "secondaryButton": "Explorer Les Destinations",
+      "whatsAppButton": "Discuter Sur WhatsApp"
+    }
   }
 }

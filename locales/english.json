@@ -806,5 +806,169 @@
       "secondary": "Request A Custom Journey",
       "tertiary": "Start Your Desert Escape"
     }
+  },
+  "faq": {
+    "hero": {
+      "tag": "FAQ",
+      "title": "Your Premium Travel Questions, Clearly Answered",
+      "subtitle": "Find clear answers about planning, custom itineraries, booking, destinations, and support so you can travel with confidence."
+    },
+    "sections": {
+      "planning": {
+        "title": "Planning & Custom Trips",
+        "items": {
+          "q1": {
+            "question": "Can you create a trip based on my budget?",
+            "answer": "Yes. We design each itinerary around your budget range, then recommend the best mix of hotels, experiences, and logistics to maximize value without compromising comfort."
+          },
+          "q2": {
+            "question": "Can I customize hotels, activities, and daily pace?",
+            "answer": "Absolutely. You can personalize hotel level, activity style, sightseeing intensity, and free time. We tailor the journey to your rhythm, not a fixed package template."
+          },
+          "q3": {
+            "question": "What if I am not sure which destination to choose?",
+            "answer": "That is common. Share your travel style, season, and budget, and our team will guide you toward the best fit, whether it is Morocco, Tunisia, Saudi Arabia, or a combination."
+          },
+          "q4": {
+            "question": "How does the planning process work, and how fast do you reply?",
+            "answer": "Once you submit your request, we review your needs and usually contact you within 24 hours with clarifying questions and a tailored direction for your trip."
+          }
+        }
+      },
+      "destinations": {
+        "title": "Destinations We Cover",
+        "items": {
+          "q1": {
+            "question": "Do you only offer Morocco, or do you cover other destinations too?",
+            "answer": "Morocco is a core specialty, and we also design custom journeys in Tunisia and Saudi Arabia. We can support other destinations based on your travel goals."
+          },
+          "q2": {
+            "question": "Do you offer custom trips in Tunisia?",
+            "answer": "Yes. We build Tunisia itineraries that can combine coastal stays, cultural heritage stops, and desert experiences in one smooth, premium journey."
+          },
+          "q3": {
+            "question": "Do you arrange custom trips in Saudi Arabia, including Riyadh and Jeddah?",
+            "answer": "Yes. We design tailored Saudi itineraries with city, culture, dining, and lifestyle experiences, with dedicated planning for both Riyadh and Jeddah."
+          },
+          "q4": {
+            "question": "Can I combine multiple places in one trip?",
+            "answer": "Yes, depending on your dates and pace. We can combine cities, nature, coast, and desert into one connected itinerary with practical routing and premium flow."
+          }
+        }
+      },
+      "morocco": {
+        "title": "Morocco Experiences",
+        "items": {
+          "q1": {
+            "question": "Do you offer custom trips in Morocco?",
+            "answer": "Yes. From short escapes to multi-day Morocco journeys, we tailor routes around your interests, whether you prioritize culture, relaxation, adventure, or all three."
+          },
+          "q2": {
+            "question": "Can I combine Agadir, Marrakech, the Atlas Mountains, and the Sahara in one itinerary?",
+            "answer": "Yes. We frequently build blended Morocco routes that combine city energy, mountain scenery, and desert camps with realistic pacing and comfortable transfers."
+          },
+          "q3": {
+            "question": "Do you offer day trips from Agadir?",
+            "answer": "Yes. Popular options include Paradise Valley and Atlas Mountains, Jeep Safari, Tafraoute and Anti-Atlas, Taroudant and Tiout, and Essaouira day trips."
+          },
+          "q4": {
+            "question": "Can you arrange Jeep Safari, Quad, Surf, Hammam, and multi-day Morocco plans?",
+            "answer": "Absolutely. We can include Jeep Safari, Quad sunset adventures, surf sessions, hammam and spa rituals, and longer routes covering Marrakech, Fes, Chefchaouen, Tangier, Rabat, Casablanca, and Sahara."
+          }
+        }
+      },
+      "services": {
+        "title": "Hotels, Services & Inclusions",
+        "items": {
+          "q1": {
+            "question": "What services can be included in a custom travel plan?",
+            "answer": "We can include flights support, hotels, airport pickup, private transfers, drivers, guided tours, activities, and day-by-day planning with one coordinated service."
+          },
+          "q2": {
+            "question": "Can you arrange airport transfers and private transportation?",
+            "answer": "Yes. We arrange airport meet-and-greet, private transfers, and intercity transport to keep your journey smooth, efficient, and stress-free."
+          },
+          "q3": {
+            "question": "Do you offer different hotel levels?",
+            "answer": "Yes. We can plan around 4-star, 5-star, and luxury stays, depending on your budget and style preferences, including boutique and premium options."
+          },
+          "q4": {
+            "question": "Can I request guides and private tours in selected cities?",
+            "answer": "Of course. We can add licensed local guides, private city tours, cultural visits, and curated experiences in the destinations you choose."
+          }
+        }
+      },
+      "budget": {
+        "title": "Budget & Booking",
+        "items": {
+          "q1": {
+            "question": "How are prices determined for custom trips?",
+            "answer": "Pricing depends on destination mix, travel dates, hotel category, transport style, included experiences, and group size. We provide transparent options before confirmation."
+          },
+          "q2": {
+            "question": "Can you build two options for different budgets?",
+            "answer": "Yes. Many travelers request tiered proposals, such as comfort and premium. This helps you choose the best balance of value, experience, and flexibility."
+          },
+          "q3": {
+            "question": "When should I book my trip?",
+            "answer": "For the strongest hotel and experience availability, we recommend booking 3 to 6 weeks in advance. Peak periods are best planned even earlier."
+          },
+          "q4": {
+            "question": "What happens after I submit an inquiry, and is a deposit required?",
+            "answer": "After alignment on your itinerary, we confirm availability and share final booking steps. Deposit requirements depend on destination and suppliers, and we explain them clearly before payment."
+          }
+        }
+      },
+      "travelStyle": {
+        "title": "Families, Couples & Travel Style",
+        "items": {
+          "q1": {
+            "question": "Do you support family-friendly trip planning?",
+            "answer": "Yes. We design family programs with suitable pacing, kid-friendly options, practical logistics, and comfortable stays for a smoother travel experience."
+          },
+          "q2": {
+            "question": "Can you plan honeymoon and couples trips?",
+            "answer": "Absolutely. We create romantic journeys with private experiences, elevated hotels, and thoughtful pacing for memorable moments."
+          },
+          "q3": {
+            "question": "Do you support women-only and privacy-focused travel requests?",
+            "answer": "Yes. We can tailor planning around privacy preferences, family considerations, and comfort priorities to match your style and expectations."
+          },
+          "q4": {
+            "question": "Can you mix relaxation and adventure in one itinerary?",
+            "answer": "Yes. We often combine city culture, nature escapes, wellness, and soft adventure in one cohesive plan adapted to your energy and preferences."
+          }
+        }
+      },
+      "support": {
+        "title": "Support & Communication",
+        "items": {
+          "q1": {
+            "question": "Can I contact your team directly on WhatsApp?",
+            "answer": "Yes. WhatsApp is one of the fastest ways to connect for questions, quick updates, and trip coordination before booking and during planning."
+          },
+          "q2": {
+            "question": "How soon will your team contact me after I submit a request?",
+            "answer": "In most cases, we respond within 24 hours. During high demand periods, we still aim to reply quickly with clear next steps."
+          },
+          "q3": {
+            "question": "Do you provide support before and during the trip?",
+            "answer": "Yes. We stay available from pre-departure planning through your travel dates for adjustments, confirmations, and on-ground coordination support."
+          },
+          "q4": {
+            "question": "How do I continue after we discuss my trip?",
+            "answer": "Once you approve the proposed direction, we finalize your itinerary, confirm services, and guide you through booking so everything is clear and easy."
+          }
+        }
+      }
+    },
+    "cta": {
+      "tag": "Plan Your Trip",
+      "title": "Ready for a Journey Designed Around You?",
+      "subtitle": "Send your request and let our team craft a premium itinerary for Morocco, Tunisia, Saudi Arabia, or a tailored multi-destination plan.",
+      "primaryButton": "Start Planning",
+      "secondaryButton": "Explore Destinations",
+      "whatsAppButton": "Chat on WhatsApp"
+    }
   }
 }

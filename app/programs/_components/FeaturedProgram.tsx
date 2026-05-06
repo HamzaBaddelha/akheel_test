@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useI18n } from "@/components/i18n/I18nProvider";
 import SlideAnimation from "@/components/ui/slide_animation";
 import { PROGRAMS_FALLBACK_IMAGE } from "@/lib/programs/constants";
-import { programDetailsHref } from "@/lib/programs/helpers";
 import type { Program } from "@/lib/programs/types";
 
 type Props = { program: Program };
@@ -75,12 +74,6 @@ export default function FeaturedProgram({ program }: Props) {
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2.5 sm:mt-8 sm:gap-3">
-              <Link
-                href={programDetailsHref(program)}
-                className="inline-flex rounded-full bg-[#2c2216] px-4 py-2.5 text-sm font-semibold text-[#e1e0d4] transition hover:bg-[#403122] sm:px-6 sm:py-3"
-              >
-                {t("programsPage.common.viewProgram")}
-              </Link>
               <Link
                 href="/plan-your-trip"
                 className="inline-flex rounded-full border border-[#2c2216]/25 bg-[#e1e0d4] px-4 py-2.5 text-sm font-semibold text-[#2c2216] transition hover:border-[#2c2216]/40 hover:bg-[#d9d7c9] sm:px-6 sm:py-3"

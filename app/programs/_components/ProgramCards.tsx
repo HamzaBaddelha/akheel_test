@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import dynamic from "next/dynamic";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useI18n } from "@/components/i18n/I18nProvider";
 import { PROGRAMS_FALLBACK_IMAGE } from "@/lib/programs/constants";
 import type { Program } from "@/lib/programs/types";
@@ -12,7 +13,13 @@ type Props = {
   variant?: "day" | "multiDay";
 };
 
-export default function ProgramCard({ program, variant = "day" }: Props) {
+const SLIDE_DURATION_MS = 180;
+const ProgramImageLightbox = dynamic(
+  () => import("@/app/programs/_components/ProgramImageLightbox"),
+  { ssr: false },
+);
+
+function ProgramCard({ program, variant = "day" }: Props) {
   const { t } = useI18n();
   const highlights = program.highlights?.slice(0, variant === "multiDay" ? 5 : 3) ?? [];
   const places = program.places?.slice(0, variant === "multiDay" ? 5 : 4) ?? [];
@@ -22,50 +29,119 @@ export default function ProgramCard({ program, variant = "day" }: Props) {
     return images.length > 0 ? images : [baseImage];
   }, [program.coverImage, program.gallery]);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [previousImageIndex, setPreviousImageIndex] = useState<number | null>(null);
+  const [isSliding, setIsSliding] = useState(false);
+  const slideTimerRef = useRef<number | null>(null);
 
-  const goToPreviousImage = () => {
-    setActiveImageIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
-  };
+  const preloadImage = useCallback((src: string) => {
+    if (typeof window === "undefined") return;
+    const img = new window.Image();
+    img.decoding = "async";
+    img.src = src;
+  }, []);
 
-  const goToNextImage = () => {
-    setActiveImageIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
-  };
+  const runSlideTransition = useCallback(
+    (nextIndex: number) => {
+      if (nextIndex === activeImageIndex || isSliding) return;
+      preloadImage(galleryImages[nextIndex]);
+      setPreviousImageIndex(activeImageIndex);
+      setActiveImageIndex(nextIndex);
+      setIsSliding(true);
+
+      if (slideTimerRef.current) {
+        window.clearTimeout(slideTimerRef.current);
+      }
+      slideTimerRef.current = window.setTimeout(() => {
+        setIsSliding(false);
+        setPreviousImageIndex(null);
+      }, SLIDE_DURATION_MS);
+    },
+    [activeImageIndex, galleryImages, isSliding, preloadImage],
+  );
+
+  const goToPreviousImage = useCallback(() => {
+    const nextIndex = activeImageIndex === 0 ? galleryImages.length - 1 : activeImageIndex - 1;
+    runSlideTransition(nextIndex);
+  }, [activeImageIndex, galleryImages.length, runSlideTransition]);
+
+  const goToNextImage = useCallback(() => {
+    const nextIndex = activeImageIndex === galleryImages.length - 1 ? 0 : activeImageIndex + 1;
+    runSlideTransition(nextIndex);
+  }, [activeImageIndex, galleryImages.length, runSlideTransition]);
+
+  useEffect(() => {
+    return () => {
+      if (slideTimerRef.current) window.clearTimeout(slideTimerRef.current);
+    };
+  }, []);
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#2C1622]/10 bg-[#E1E0D4] shadow-[0_12px_32px_rgba(44,22,34,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(44,22,34,0.12)]">
+    <>
+      <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#2C1622]/10 bg-[#E1E0D4] shadow-[0_12px_32px_rgba(44,22,34,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(44,22,34,0.12)]">
       <div className={`relative overflow-hidden ${variant === "multiDay" ? "h-56 sm:h-64" : "h-48 sm:h-56"}`}>
-        <Image
-          src={galleryImages[activeImageIndex]}
-          alt={program.title || t("programsPage.common.travelProgram")}
-          fill
-          sizes="(max-width: 768px) 92vw, (max-width: 1280px) 50vw, 33vw"
-          className="object-cover transition duration-500 group-hover:scale-[1.03]"
+        <button
+          type="button"
+          onClick={() => setIsLightboxOpen(true)}
+          aria-label={`Open image for ${program.title}`}
+          className="absolute inset-0 z-10 cursor-zoom-in"
         />
+        <div className="absolute inset-0">
+          {previousImageIndex !== null && (
+            <Image
+              src={galleryImages[previousImageIndex]}
+              alt={program.title || t("programsPage.common.travelProgram")}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              quality={68}
+              className={`object-cover will-change-transform ${
+                isSliding ? "opacity-0 transition-opacity duration-200 ease-out" : "opacity-100"
+              }`}
+            />
+          )}
+          <Image
+            src={galleryImages[activeImageIndex]}
+            alt={program.title || t("programsPage.common.travelProgram")}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            quality={68}
+            className="object-cover will-change-transform transition-[opacity,transform] duration-200 ease-out group-hover:scale-[1.02]"
+          />
+        </div>
         {galleryImages.length > 1 && (
           <>
             <button
               type="button"
               aria-label={`Previous image for ${program.title}`}
-              onClick={goToPreviousImage}
-              className="absolute left-3 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#2C1622]/70 text-sm font-semibold text-[#E1E0D4] transition hover:bg-[#2C1622]"
+              onClick={(event) => {
+                event.stopPropagation();
+                goToPreviousImage();
+              }}
+              className="absolute left-3 top-1/2 z-20 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#2C1622]/70 text-sm font-semibold text-[#E1E0D4] transition hover:bg-[#2C1622]"
             >
               ‹
             </button>
             <button
               type="button"
               aria-label={`Next image for ${program.title}`}
-              onClick={goToNextImage}
-              className="absolute right-3 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#2C1622]/70 text-sm font-semibold text-[#E1E0D4] transition hover:bg-[#2C1622]"
+              onClick={(event) => {
+                event.stopPropagation();
+                goToNextImage();
+              }}
+              className="absolute right-3 top-1/2 z-20 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#2C1622]/70 text-sm font-semibold text-[#E1E0D4] transition hover:bg-[#2C1622]"
             >
               ›
             </button>
-            <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-1.5 rounded-full bg-[#2C1622]/45 px-2 py-1">
+            <div className="absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1.5 rounded-full bg-[#2C1622]/45 px-2 py-1">
               {galleryImages.map((imageSrc, imageIndex) => (
                 <button
-                  key={imageSrc}
+                  key={`${imageSrc}-${imageIndex}`}
                   type="button"
                   aria-label={`Go to image ${imageIndex + 1} for ${program.title}`}
-                  onClick={() => setActiveImageIndex(imageIndex)}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    runSlideTransition(imageIndex);
+                  }}
                   className={`h-1.5 w-1.5 rounded-full transition ${
                     imageIndex === activeImageIndex ? "bg-[#E1E0D4]" : "bg-[#E1E0D4]/45"
                   }`}
@@ -128,13 +204,6 @@ export default function ProgramCard({ program, variant = "day" }: Props) {
 
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
-            href={`/programs/${program.slug}`}
-            aria-label={`${t("programsPage.common.view")} ${program.title || t("programsPage.common.program")}`}
-            className="inline-flex items-center rounded-full bg-[#2C1622] px-4 py-2 text-sm font-semibold text-[#E1E0D4] transition hover:bg-[#3B1F2E]"
-          >
-            {t("programsPage.common.viewProgram")}
-          </Link>
-          <Link
             href="/plan-your-trip"
             className="inline-flex items-center rounded-full border border-[#2C1622]/25 bg-transparent px-4 py-2 text-sm font-semibold text-[#2C1622] transition hover:border-[#2C1622]/45 hover:bg-[#E1E0D4]"
           >
@@ -142,6 +211,19 @@ export default function ProgramCard({ program, variant = "day" }: Props) {
           </Link>
         </div>
       </div>
-    </article>
+      </article>
+
+      <ProgramImageLightbox
+        isOpen={isLightboxOpen}
+        title={program.title || t("programsPage.common.travelProgram")}
+        images={galleryImages}
+        activeIndex={activeImageIndex}
+        onClose={() => setIsLightboxOpen(false)}
+        onPrevious={goToPreviousImage}
+        onNext={goToNextImage}
+      />
+    </>
   );
 }
+
+export default memo(ProgramCard);
