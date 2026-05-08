@@ -9,6 +9,7 @@ export type TripFormState = {
   adults: string;
   children: string;
   budgetRange: string;
+  flightType: string;
   tripTypes: string[];
   hotelLevel: string;
   requiredServices: string[];

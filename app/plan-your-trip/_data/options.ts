@@ -19,6 +19,7 @@ export const budgetOptions = [
   "Open Budget",
 ] as const;
 
+export const flightTypeOptions = ["Economy Flight", "Business Class", "First Class Flight"] as const;
 export const tripTypeOptions = ["Family", "Honeymoon", "Adventure", "Relaxation", "Shopping"] as const;
 export const hotelLevelOptions = ["3 Stars", "4 Stars", "5 Stars", "Luxury"] as const;
 export const serviceOptions = ["Flights", "Hotel", "Transportation", "Tours", "Tour Guide"] as const;
@@ -34,6 +35,7 @@ export const initialFormState: TripFormState = {
   adults: "1",
   children: "0",
   budgetRange: "",
+  flightType: "",
   tripTypes: [],
   hotelLevel: "",
   requiredServices: [],

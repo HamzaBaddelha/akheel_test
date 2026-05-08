@@ -633,6 +633,7 @@
         "adults": "Adults",
         "children": "Children",
         "budgetRange": "Budget Range",
+        "flightType": "Flight Type",
         "additionalNotes": "Share activities, preferences, or special requests"
       },
       "placeholders": {
@@ -640,6 +641,7 @@
       },
       "options": {
         "selectBudget": "Select your budget",
+        "selectFlightType": "Select your flight type",
         "destinations": [
           "Not sure yet",
           "Morocco",
@@ -656,6 +658,11 @@
           "5,000 - 10,000 SAR",
           "10,000 - 20,000 SAR",
           "Open Budget"
+        ],
+        "flightTypes": [
+          "Economy Flight",
+          "Business Class",
+          "First Class Flight"
         ],
         "tripTypes": [
           "Family",
@@ -689,6 +696,7 @@
         "children": "Children count cannot be negative.",
         "travelersBreakdown": "Adults and children cannot exceed total travelers.",
         "budgetRange": "Please select a budget range.",
+        "flightType": "Please choose your preferred flight type.",
         "hotelLevel": "Please choose your preferred hotel level."
       },
       "cta": {

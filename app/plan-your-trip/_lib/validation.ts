@@ -11,6 +11,7 @@ type ValidationMessages = {
   children: string;
   travelersBreakdown: string;
   budgetRange: string;
+  flightType: string;
   hotelLevel: string;
 };
 
@@ -31,6 +32,7 @@ export function validateTripForm(formState: TripFormState, messages: ValidationM
   if (children < 0) return messages.children;
   if (adults + children > travelers) return messages.travelersBreakdown;
   if (!formState.budgetRange) return messages.budgetRange;
+  if (!formState.flightType) return messages.flightType;
   if (!formState.hotelLevel) return messages.hotelLevel;
 
   return "";

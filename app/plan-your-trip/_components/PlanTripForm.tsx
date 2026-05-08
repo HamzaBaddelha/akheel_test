@@ -5,6 +5,7 @@ import { useI18n } from "@/components/i18n/I18nProvider";
 import {
   budgetOptions,
   destinationOptions,
+  flightTypeOptions,
   hotelLevelOptions,
   initialFormState,
   serviceOptions,
@@ -58,6 +59,7 @@ export default function PlanTripForm() {
       children: t("planTrip.form.validation.children"),
       travelersBreakdown: t("planTrip.form.validation.travelersBreakdown"),
       budgetRange: t("planTrip.form.validation.budgetRange"),
+      flightType: t("planTrip.form.validation.flightType"),
       hotelLevel: t("planTrip.form.validation.hotelLevel"),
     });
     setSubmitError(validationError);
@@ -213,21 +215,42 @@ export default function PlanTripForm() {
 
           <fieldset className={fieldsetClass}>
             <legend className="px-1 text-base font-semibold text-primary">{t("planTrip.form.groups.budget")}</legend>
-            <FieldLabel htmlFor="budgetRange">{t("planTrip.form.fields.budgetRange")}</FieldLabel>
-            <select
-              id="budgetRange"
-              value={formState.budgetRange}
-              onChange={(e) => updateField("budgetRange", e.target.value)}
-              className={`${controlClass} sm:max-w-sm`}
-              required
-            >
-              <option value="">{t("planTrip.form.options.selectBudget")}</option>
-              {budgetOptions.map((budget, index) => (
-                <option key={budget} value={budget}>
-                  {t(`planTrip.form.options.budget.${index}`)}
-                </option>
-              ))}
-            </select>
+            <div className="grid gap-5 lg:grid-cols-2">
+              <div>
+                <FieldLabel htmlFor="budgetRange">{t("planTrip.form.fields.budgetRange")}</FieldLabel>
+                <select
+                  id="budgetRange"
+                  value={formState.budgetRange}
+                  onChange={(e) => updateField("budgetRange", e.target.value)}
+                  className={`${controlClass} sm:max-w-sm`}
+                  required
+                >
+                  <option value="">{t("planTrip.form.options.selectBudget")}</option>
+                  {budgetOptions.map((budget, index) => (
+                    <option key={budget} value={budget}>
+                      {t(`planTrip.form.options.budget.${index}`)}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <FieldLabel htmlFor="flightType">{t("planTrip.form.fields.flightType")}</FieldLabel>
+                <select
+                  id="flightType"
+                  value={formState.flightType}
+                  onChange={(e) => updateField("flightType", e.target.value)}
+                  className={controlClass}
+                  required
+                >
+                  <option value="">{t("planTrip.form.options.selectFlightType")}</option>
+                  {flightTypeOptions.map((flightType, index) => (
+                    <option key={flightType} value={flightType}>
+                      {t(`planTrip.form.options.flightTypes.${index}`)}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset className={fieldsetClass}>

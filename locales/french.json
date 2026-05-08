@@ -739,6 +739,7 @@
         "adults": "Adultes",
         "children": "Enfants",
         "budgetRange": "Fourchette de Budget",
+        "flightType": "Type de Vol",
         "additionalNotes": "Partagez vos activites preferees, envies ou demandes speciales"
       },
       "placeholders": {
@@ -746,6 +747,7 @@
       },
       "options": {
         "selectBudget": "Selectionnez votre budget",
+        "selectFlightType": "Selectionnez votre type de vol",
         "destinations": [
           "Pas encore decide",
           "Maroc",
@@ -762,6 +764,11 @@
           "5 000 - 10 000 SAR",
           "10 000 - 20 000 SAR",
           "Budget ouvert"
+        ],
+        "flightTypes": [
+          "Vol en classe economique",
+          "Classe affaires",
+          "Vol en premiere classe"
         ],
         "tripTypes": [
           "Famille",
@@ -795,6 +802,7 @@
         "children": "Le nombre d'enfants ne peut pas etre negatif.",
         "travelersBreakdown": "Le total adultes + enfants ne peut pas depasser le nombre total de voyageurs.",
         "budgetRange": "Veuillez choisir une fourchette de budget.",
+        "flightType": "Veuillez choisir votre type de vol prefere.",
         "hotelLevel": "Veuillez choisir votre categorie d'hotel preferee."
       },
       "cta": {
